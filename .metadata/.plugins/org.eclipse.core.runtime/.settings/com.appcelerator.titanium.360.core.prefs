@@ -1,0 +1,4 @@
+UserName=aboynton@fullsail.edu
+UserOrgs={"100039098"\:{"org_id"\:100039098,"name"\:"aboyntonfullsailedu","_id"\:"55787ce498546a15137551c8","guid"\:"4d33f1c8-b6b6-42e7-9048-c31e5acad19b","user_count"\:1,"current_users_role"\:"admin","is_node_acs_admin"\:true,"created"\:"2015-06-10T18\:07\:32.046Z","reseller"\:false,"active"\:true,"package"\:"free","envs"\:[{"_id"\:"production","name"\:"production","isProduction"\:true,"acsBaseUrl"\:"https\://api.cloud.appcelerator.com","acsAuthBaseUrl"\:"https\://secure-identity.cloud.appcelerator.com","nodeACSEndpoint"\:"https\://admin.cloudapp-enterprise.appcelerator.com"},{"_id"\:"development","name"\:"development","isProduction"\:false,"acsBaseUrl"\:"https\://api.cloud.appcelerator.com","acsAuthBaseUrl"\:"https\://secure-identity.cloud.appcelerator.com","nodeACSEndpoint"\:"https\://admin.cloudapp-enterprise.appcelerator.com"}]}}
+eclipse.preferences.version=1
+previousDashboardEndpoint=https\://platform.appcelerator.com

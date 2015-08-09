@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.appcelerator.titanium.feature.360.rcp:4.1.1.201507141126-867eFNKFGvmRjR9AbYE4y3XRN2Xf"/>
+		<item value="com.appcelerator.titanium.studio:4.1.1.1436893481-7_7U7w8UmdxCdyxZ9"/>
+		<item value="com.aptana.feature:4.1.1.1436893468-B37c84CK1xsFT6nu49833355984B"/>
+		<item value="org.eclipse.emf.common:2.10.1.v20150123-0348"/>
+		<item value="org.eclipse.emf.ecore:2.10.2.v20150123-0348"/>
+		<item value="org.eclipse.help:2.0.103.v20150204-1700"/>
+		<item value="org.eclipse.platform:4.4.2.v20150204-1700"/>
+		<item value="org.eclipse.rcp:4.4.2.v20150204-1700"/>
+	</list>
+</section>
