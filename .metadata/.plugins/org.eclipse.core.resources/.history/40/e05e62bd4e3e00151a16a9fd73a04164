@@ -18,7 +18,7 @@ var netCheck = function(latitude, longitude) {
 				alert("An error has occurred!");
 			},
 			// Set timeout
-			timeout: 5000
+			timeout: 4000
 		});
 		
 		client.open("GET", url);
