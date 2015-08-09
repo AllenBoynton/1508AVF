@@ -1,6 +1,6 @@
 // getGeo function file using api.js file
 
-var api = require("api");
+var loadFile = require("api");
 
 var geoGet = function() {
 	Ti.Geolocation.purpose = "Your location is required to run this application.";

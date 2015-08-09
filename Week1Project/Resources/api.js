@@ -1,6 +1,6 @@
 // api file to access wunderground.com
 
-var ui = require("ui");
+var loadFile = require("ui");
 
 // Function to start network connectivity
 var netCheck = function(latitude, longitude) {

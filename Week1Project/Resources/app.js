@@ -7,7 +7,7 @@
 Ti.UI.setBackgroundColor("#000");
 
 // Require geo file
-var geo = require("geo");
+var loadFile = require("geo");
 
-// Fire geoGet function
-geo.geoGet();
+// Fire getGeo function
+// loadFile.getGeo();
