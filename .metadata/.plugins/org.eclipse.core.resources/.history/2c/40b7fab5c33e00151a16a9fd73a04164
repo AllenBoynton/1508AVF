@@ -1,0 +1,19 @@
+// Allen Boynton
+// AVF 1508
+// Week 1 Project : Geolocation
+// August 8, 2015
+
+// Set background
+// Ti.UI.setBackgroundColor("#000");
+// Main window view
+var win = Ti.UI.createWindow ({
+	backgroundColor: "#000",
+	layout: "vertical"
+});
+
+// Require geo file
+var loadGeo = require("geo");
+var loadUI = require("ui");
+
+// Open main window
+win.open();

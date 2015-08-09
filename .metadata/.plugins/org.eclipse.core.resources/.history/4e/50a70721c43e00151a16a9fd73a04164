@@ -1,0 +1,65 @@
+var osname = Ti.Platform.osname;
+
+if (osname === "android"){
+	Ti.Geolocation.Android.manualMode = true;
+	Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_HIGH;
+		gpsProvider = Ti.Geolocation.Android.createLocationProvider({
+			name: Ti.Geolocation.PROVIDER_GPS,
+			minUpdateTime: 60,
+			minUpdateDistance: 100
+		});
+	Ti.Geolocation.Android.addLocationProvider(gpsProvider);
+};
+
+var getGeo = function(){
+	if (Ti.Network.online == true){
+	Ti.Geolocation.purpose = "Your location is required to get your local weather.";
+	Ti.Geolocation.getCurrentPosition(function(e) {
+		var latitude = e.coords.latitude;
+		var longitude = e.coords.longitude;
+		var url = "http://api.wunderground.com/api/d2e13383813c88c5/features/forecast/conditions/geolookup/q/" + latitude + "," + longitude + ".json;";
+		var getData = Ti.Network.createHTTPClient();
+		
+		getData.onload = function(e){
+			var json = JSON.parse(this.responseText);
+			var forecast = json.forecast;
+			var location = json.location;
+			var observation = json.current_observation;
+			var city = "Current City: ";
+			var time = "Curent Time: ";
+			var weather = "Current Weather: ";
+			var temp = "Current Temperature: ";
+			var feels = "Feels Like: " + feels + "Degrees";
+			var windDir = "Wind Direction: ";
+			var windSpeed = "Wind Speed: " + windSpeed + " MPH";
+			
+			loadGeo.textLabel2(city);
+			loadGeo.textLabel1(observation.display.location.city);
+			loadGeo.textLabel2(time);
+			loadGeo.textLabel1(forecast.txt_forecast.date);
+			loadGeo.textLabel2(weather);
+			loadGeo.textLabel1(observation.weather);
+			loadGeo.textLabel2(temp);
+			loadGeo.textLabel1(observation.temperature_string);
+			loadGeo.textLabel2(feels);
+			loadGeo.textLabel1(observation.feelslike_string);
+			loadGeo.textLabel2(windSpeed);
+			loadGeo.textLabel1(observation.wind_mph);
+			loadGeo.textLabel2(windDir);
+			loadGeo.textLabel1(observation.wind_dir);	
+		};
+		
+		getData.open("GET", url);
+		getData.send();
+	});
+	
+	} else {
+		alert("Network Currently Unavailable");
+	};
+	
+};
+
+exports.geo = getGeo;
+
+// 34.8621210
+// -82.3539020

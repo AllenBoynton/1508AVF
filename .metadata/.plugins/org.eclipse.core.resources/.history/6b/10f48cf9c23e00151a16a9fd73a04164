@@ -1,0 +1,30 @@
+// UI window view function
+
+var labelFormat = {
+	top: 30,
+	left: 30,
+	color: "#000",
+	borderColor: "black",
+	font: {fontSize: 20, fontFamily: "Roboto"}
+};
+
+var textLabel1 = function(e){
+	var label = Ti.UI.createLabel(labelFormat);
+	label.text = e;
+	win.add(label);
+};
+
+var textLabel2 = function(e){
+	var label = Ti.UI.createLabel(labelFormat);
+	label.text = e;
+	label.font = {fontSize: 28, fontWeight: "bold"};
+	win.add(label);
+};
+
+exports.buildTextLabel1 = textLabel1;
+exports.buildTextLabel2 = textLabel2;
+
+setTimeout(function(){
+	loadUI.getGeo();
+},
+5000);
