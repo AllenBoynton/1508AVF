@@ -1,2 +1,3 @@
 eclipse.preferences.version=1
-liveview.enable=false
+liveview.enable=true
+liveview\:Week1Project=true
