@@ -1,11 +1,9 @@
-// api file to access wunderground.com
-
-var loadFile = require("ui");
+// File is check for connectivity to network
 
 // Function to start network connectivity
 var netCheck = function(latitude, longitude) {
 	// Wunderground API
-	var url = "http://api.wunderground.com/api/d2e13383813c88c5/features/forecast/conditions/geolookup/q/" + latitude + "," + longitude + ".json;";
+	var url = "http://api.wunderground.com/api/d2e13383813c88c5/geolookup/conditions/q/34.8621210,-82.3539020.json";
 	if(Ti.Network.online){
 		var client = Ti.Network.createHTTPClient({
 			onload: function(e){
@@ -30,3 +28,5 @@ var netCheck = function(latitude, longitude) {
 	}
 	
 };
+
+exports.netCheck = netCheck;

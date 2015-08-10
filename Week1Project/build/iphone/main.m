@@ -10,7 +10,7 @@
 NSString * const TI_APPLICATION_DEPLOYTYPE = @"development";
 NSString * const TI_APPLICATION_ID = @"edu.fullsail.Week1Project";
 NSString * const TI_APPLICATION_PUBLISHER = @"aboynton";
-NSString * const TI_APPLICATION_URL = @"http://";
+NSString * const TI_APPLICATION_URL = @"http://www.mysite.com";
 NSString * const TI_APPLICATION_NAME = @"Week1Project";
 NSString * const TI_APPLICATION_VERSION = @"1.0";
 NSString * const TI_APPLICATION_DESCRIPTION = @"";
