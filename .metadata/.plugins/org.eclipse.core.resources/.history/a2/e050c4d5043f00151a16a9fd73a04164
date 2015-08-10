@@ -1,0 +1,122 @@
+// Function is collecting information for geolocation and local weather
+
+var osname = Ti.Platform.osname;
+
+if(osname === "android") {
+	Ti.Geolocation.Android.manualMode = true;
+	Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_HIGH;
+		gpsProvider = Ti.Geolocation.Android.createLocationProvider({
+			name: Ti.Geolocation.PROVIDER_GPS,
+			minUpdateTime: 60,
+			minUpdateDistance: 100
+		});
+		Ti.Geolocation.Android.addLocationProvider(gpsProvider);
+};
+
+var getGeo = function(){
+	if (Ti.Network.online == true) {
+		Ti.Geolocation.purpose = "Current location is needed to get your local weather.";
+		Ti.Geolocation.getCurrentPosition = function(e) {
+			var latitude = e.coords.latitude;
+			var longitude = e.coords.longitude;
+			var url = "http://api.wunderground.com/api/d2e13383813c88c5/geolookup/conditions/q/" + latitude + ", " + longitude + ".json";
+			var client = Ti.Network.createHTTPClient();    
+		    client.onload = function(e) {
+		    	var json = JSON.parse(this.responseText);
+				var labelFormat = {
+					color: "black",
+					backgroundColor: "#ccc",
+					borderColor: "black",
+					font: {fontSize: 12, fontFamily: "Roboto"}
+				};
+				
+				var bg = Ti.UI.createView({
+					backgroundColor: "#dff5fb",
+					top: 60,
+					left: 20,
+					right: 20,
+					bottom: 170,
+					borderRadius: 4,
+					borderWidth: 2,
+					borderColor: "black"
+				});
+				
+				var icon = Ti.UI.createImageView({
+					image: JSON.current_observation.icon_url,
+					top: 150
+				});
+				
+				var location = Ti.UI.createLabel(labelFormat);
+					location.top = 30;
+					location.font = {fontSize: 20, fontWeight: "bold", fontFamily: "Roboto"};
+					location.text = current_location.display_location.full;
+					
+				var weather = Ti.UI.createLabel(labelFormat);
+					weather.top = 200;
+					weather.font = {fontSize: 15, fontFamily: "Roboto"};
+					weather.text = current_observation.weather + " is the current weather.";
+					
+				var temp = Ti.UI.createLabel(labelFormat);
+					weather.top = location.top + 60;
+					weather.font = {fontSize: 42, fontWeight: "bold", fontFamily: "Roboto"};
+					weather.text = current_observation.temp_f + " F";
+					
+				var feels = Ti.UI.createLabel(labelFormat);
+					feels.top = 260;
+					feels.left = 20;
+					feels.text = "Feels Like " + current_observation.feelslike_f + "F";
+					
+				var humidity = Ti.UI.createLabel(labelFormat);
+					humidity.top = 275;
+					humidity.left = 20;
+					humidity.text = "Humidity: " + observation_location.relative_humidity;
+					
+				var uvIndex = Ti.UI.createLabel(labelFormat);
+					uvIndex.top = 40;
+					uvIndex.left = 20;
+					uvIndex.text = "UV Index: " + current_observation.UV;
+				
+				var windDir = Ti.UI.createLabel(labelFormat);
+					windDir.top = 275;
+					windDir.right = 20;
+					windDir.text = "Wind direction: " + current_observation.wind_dir;
+				
+				var windSpeed = Ti.UI.createLabel(labelFormat);
+					windSpeed.top = 260;
+					windSpeed.right = 20;
+					windSpeed.text = "Wind speed: " + current_observation.wind_mph + " mph";
+				
+				var update = Ti.UI.createLabel(labelFormat);
+					update.bottom = 5;
+					update.right = 20;
+					update.color = "red";
+					update.font = {fontSize: 10};
+					update.text = current_observation.observation_time;
+					
+				win.add(bg);
+				bg.add(icon);
+				bg.add(location);
+				bg.add(weather);
+				bg.add(temp);
+				bg.add(feels);
+				bg.add(humidity);
+				bg.add(uvIndex);
+				bg.add(windDir);
+				bg.add(windSpeed);
+				bg.add(update);
+		    	      	         
+		    };	    
+			client.open("GET", url);
+			client.send();
+		};
+					
+	} else {
+		alert("Network is currently unavailable.");
+	};
+	
+};
+
+exports.getGeo = getGeo;
+
+// var latitude = 34.8621210;
+// var longitude = -82.3539020;

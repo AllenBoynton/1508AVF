@@ -6,12 +6,14 @@
 // Set background
 Titanium.UI.setBackgroundColor("#000");
 
-// Loading js file
+var win = Ti.UI.createWindow({
+	backgroundColor: "#ccc",
+	layout: "vertical"
+});
+
 var geo = require("geo");
 var api = require("api");
-var ui = require("ui");
 
-// Globally sharing function getGeo
+win.open();
+
 geo.getGeo();
-api.netCheck();
-ui.showData();

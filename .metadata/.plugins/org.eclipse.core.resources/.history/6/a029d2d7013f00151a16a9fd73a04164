@@ -1,0 +1,45 @@
+// Function is collecting information for geolocation and local weather
+
+var osname = Ti.Platform.osname;
+
+if(osname === "android") {
+	Ti.Geolocation.Android.manualMode = true;
+	Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_HIGH;
+		gpsProvider = Ti.Geolocation.Android.createLocationProvider({
+			name: Ti.Geolocation.PROVIDER_GPS,
+			minUpdateTime: 60,
+			minUpdateDistance: 100
+		});
+		Ti.Geolocation.Android.addLocationProvider(gpsProvider);
+};
+
+var getGeo = function(){
+	if (Ti.Network.online == true) {
+	Ti.Geolocation.purpose = "Current location is needed to get your local weather.";
+	Ti.Geolocation.getCurrentPosition(function(e) {
+		var latitude = e.coords.latitude;
+		var longitude = e.coords.longitude;
+		var url = "http://api.wunderground.com/api/d2e13383813c88c5/geolookup/conditions/q/" + latitude + ", " + longitude + ".json";
+		var client = Ti.Network.createHTTPClient();    
+	    getData.onload = function(e) {
+	    	var json = JSON.parse(this.responseText);      
+	    };     
+	    onerror : function(e) {
+	        Ti.API.debug(e.error);
+	        alert('Unexpected error');
+	    };		    
+	    timeout : 5000;
+	    
+		client.open("GET", url);
+		client.send();
+	)};
+	} else {
+		alert("Network is currently unavailable.");
+	};
+};
+
+// var api = require("api");
+exports.getGeo = getGeo;
+
+// var latitude = 34.8621210;
+// var longitude = -82.3539020;

@@ -1,7 +1,7 @@
-// Function to check for network connectivity
 
 var ui = require("ui");
 
+// Function to open and check network connectivity
 var netCheck = function(latitude, longitude) {
 	var url = "http://api.wunderground.com/api/d2e13383813c88c5/geolookup/conditions/q/" + latitude + ", " + longitude + ".json";		
 	if (Ti.Network.online == true) {
