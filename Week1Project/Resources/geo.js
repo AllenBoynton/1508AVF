@@ -1,21 +1,12 @@
 // Function is collecting information for geolocation and local weather
 var api = require("api");
 
-Ti.Geolocation.Android.manualMode = true;
-Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_HIGH;
-	gpsProvider = Ti.Geolocation.Android.createLocationProvider({
-		name: Ti.Geolocation.PROVIDER_GPS,
-		minUpdateTime: 60,
-		minUpdateDistance: 100
-	});
-	Ti.Geolocation.Android.addLocationProvider(gpsProvider);
-
 var osname = Ti.Platform.osname;
 
 var getGeo = function(){
 	Ti.Geolocation.purpose = "Current location is needed to get your local weather.";
-	Ti.Geolocation.getCurrentPosition(function(e) {
-		if(osname === "android") {
+	Ti.Geolocation.getCurrentPosition = function(e) {
+		if(osname == "android") {
 			var latitude = 34.8621210;
 			var longitude = -82.3539020;
 			api.netCheck(latitude, longitude);
@@ -25,7 +16,7 @@ var getGeo = function(){
 			api.netCheck(latitude, longitude);
 			alert("Network is currently unavailable.");
 		};
-	)};	
+	};	
 };
 
 exports.getGeo = getGeo;
