@@ -8,10 +8,6 @@ Titanium.UI.setBackgroundColor("#000");
 
 // Loading js file
 var geo = require("geo");
-var api = require("api");
-var ui = require("ui");
 
 // Globally sharing function getGeo
 geo.getGeo();
-api.netCheck();
-ui.showData();
