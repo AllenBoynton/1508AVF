@@ -15,7 +15,7 @@ var checkData = function(json) {
 	};
 	
 	var bg = Ti.UI.createView({
-		backgroundColor: "black",
+		backgroundImage: "images/170.jpg",
 		top: 20,
 		height: "100%",
 		width: "100%"
@@ -31,6 +31,12 @@ var checkData = function(json) {
 		location.top = 20;
 		location.left = 20;
 		location.text = json.current_observation.display_location.full;
+		
+	var time = Ti.UI.createLabel(labelFormat);
+		time.top = location.top + 20;
+		time.left = 20;
+		time.font = {fontSize: 12, fontWeight: "bold", fontFamily: "Roboto"};
+		time.text = json.current_observation.local_time_rfc822;
 		
 	var temp = Ti.UI.createLabel(labelFormat);
 		temp.top = location.top + 60;
@@ -48,36 +54,21 @@ var checkData = function(json) {
 		feels.left = 20;
 		feels.text = "Feels like " + json.current_observation.feelslike_f + " F";
 		
-	var windDir = Ti.UI.createLabel(labelFormat);
-		windDir.top = 400;
-		windDir.left = 20;
-		windDir.text = "Wind direction: " + json.current_observation.wind_dir;
-	
-	var humidity = Ti.UI.createLabel(labelFormat);
-		humidity.top = windDir.top + 20;
-		humidity.left = 20;
-		humidity.text = "Humidity: " + json.current_observation.relative_humidity;
-		
-	var windSpeed = Ti.UI.createLabel(labelFormat);
-		windSpeed.top = humidity.top + 20;
-		windSpeed.left = 20;
-		windSpeed.text = "Wind speed: " + json.current_observation.wind_mph + " mph";
-	
 	var update = Ti.UI.createLabel(labelFormat);
 		update.textAlign = "center";
+		update.left = 20;
+		update.right = 20;
 		update.bottom = 30;
-		update.color = "red";
+		update.color = "yellow";
 		update.text = json.current_observation.observation_time;
 		
 	win.add(bg);
 	bg.add(icon);
 	bg.add(location);
+	bg.add(time);
 	bg.add(weather);
 	bg.add(temp);
 	bg.add(feels);
-	bg.add(humidity);
-	bg.add(windDir);
-	// bg.add(windSpeed);
 	bg.add(update);
 	win.open();
 	
