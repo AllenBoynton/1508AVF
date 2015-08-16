@@ -1,5 +1,5 @@
 
-Sun Aug 16 2015 00:05:34 GMT-0400 (EDT)
+Sun Aug 16 2015 00:29:01 GMT-0400 (EDT)
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = android
 
 Command
-  /usr/local/bin/node /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform android --log-level trace --sdk 4.1.0.GA --project-dir /Users/aboynton/Desktop/AVF1508/Week1Project --target emulator --android-sdk /Users/aboynton/Library/Android/sdk --device-id Samsung Galaxy S5 - 4.4.4 --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 57181 --plugin-paths /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules --config-file /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/build-1439697928989.json --no-banner
+  /usr/local/bin/node /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform android --log-level trace --sdk 4.1.0.GA --project-dir /Users/aboynton/Desktop/AVF1508/Week1Project --target emulator --android-sdk /Users/aboynton/Library/Android/sdk --device-id Samsung Galaxy S5 - 4.4.4 --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 57181 --plugin-paths /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules --config-file /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/build-1439699336480.json --no-banner
 
 [DEBUG]  Detecting modules in /Users/aboynton/Library/Application Support/Titanium/modules
 [DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
@@ -74,25 +74,24 @@ Command
 [TRACE]  Detecting if Samsung Galaxy S5 - 4.4.4 exists...
 [TRACE]  Found 3 emulators
 [TRACE]  Emulator exists, detecting all running emulators and connected devices...
-[TRACE]  Detected 0 running emulators and connected devices
-[TRACE]  Emulator not running, detecting running emulators
-[TRACE]  Found 3 emulators
-[TRACE]  Starting the emulator...
-[INFO]   Running: /Applications/Genymotion.app/Contents/MacOS/player --vm-name "Samsung Galaxy S5 - 4.4.4"
-[TRACE]  Emulator is starting, monitoring boot state...
+[TRACE]  Detected 1 running emulators and connected devices
+[TRACE]  Checking 1 devices to see if it's the emulator we want
+[TRACE]  The emulator is running
+[INFO]   Emulator already running
 [TRACE]  Checking the boot state for the next 240000 ms
 [TRACE]  Waiting for emulator to register with ADB
 [TRACE]  Emulator process started
 [TRACE]  offline build file /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/build-b321dcb89e6da19813f3e262415bfe7027a10563.json
-[TRACE]  No devices found, continuing to wait
 [TRACE]  online 1
-[TRACE]  optimizing build, last build was 478.633 sec ago
+[TRACE]  optimizing build, last build was 1886.324 sec ago
 [DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/.DS_Store
 [DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/KS_nav_ui.png => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/Resources/KS_nav_ui.png
 [DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/KS_nav_views.png => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/Resources/KS_nav_views.png
 [DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/android
+[DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/images/.DS_Store
 [DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/images/170.jpg => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/Resources/images/170.jpg
 [DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/images/328.jpg => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/Resources/images/328.jpg
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/images/beach.jpeg => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/Resources/images/beach.jpeg
 [DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/iphone
 [DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/mobileweb
 [DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/android/appicon.png => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/Resources/appicon.png
@@ -114,6 +113,9 @@ Command
 [DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/geo.js => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/Resources/geo.js
 [DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week1Project/Resources/ui.js => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/Resources/ui.js
 [DEBUG]  Symlinking /Users/aboynton/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9/ti.cloud.js => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/Resources/ti.cloud.js
+[TRACE]  Found 1 devices, checking if any of them are the emulator...
+[TRACE]  Emulator is running!
+[TRACE]  Checking if boot animation has finished...
 [DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-v8.jar
 [DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-analytics.jar
 [DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/aps-analytics.jar
@@ -149,39 +151,43 @@ Command
 [DEBUG]  Unknown namespace ui.ios, skipping
 [INFO]   Writing /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets/app.json
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-analytics.res.zip
-[DEBUG]  Copying /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-jx8evg/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[TRACE]  Emulator is booted, emitting booted event
+[INFO]   Emulator is booted
+[INFO]   SD card not required, skipping mount check
+[INFO]   Emulator ready!
+[DEBUG]  Copying /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-1rmzsnv/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-android.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-1ywn9wz/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-dmcf1o/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-app.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-1e4wwh9/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-1f9llo/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-filesystem.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-148q70j/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-all1ks/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-media.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-m3pjp1/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-4prvxm/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-locale.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-ivlu17/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-ei6i9e/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-network.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-jk5xg6/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-1w82k0j/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-xml.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-1em6361/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-avp4xn/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-utils.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-gidt5a/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-12n3ybh/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-geolocation.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-w5s7r6/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-1mef2ki/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-accelerometer.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-lza5xp/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-19glnaz/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-contacts.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-qvjbw4/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-1bonnty/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-map.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-1d5epj4/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-11x5rsu/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-calendar.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-5u7z0i/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-e851iw/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-gesture.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-ff17qe/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-ayhee2/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-platform.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-16a1ibc/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-1mn475i/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-database.res.zip
-[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-1v5tc8j/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-1t7uuzn/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [DEBUG]  Copying template /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/AppInfo.java => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/gen/edu/fullsail/Week1Project/Week1projectAppInfo.java
 [DEBUG]  Copying template /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/App.java => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/gen/edu/fullsail/Week1Project/Week1projectApplication.java
 [DEBUG]  Copying template /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/Activity.java => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/gen/edu/fullsail/Week1Project/Week1projectActivity.java
@@ -193,18 +199,9 @@ Command
 [INFO]   Generating i18n files
 [DEBUG]  Merging en strings => /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/strings.xml
 [INFO]   Generating /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res/values/theme.xml
-[INFO]   Packaging application: /Users/aboynton/Library/Android/sdk/build-tools/21.1.2/aapt "package" "-f" "-m" "-J" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/gen" "-M" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/AndroidManifest.xml" "-A" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets" "-S" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res" "-I" "/Users/aboynton/Library/Android/sdk/platforms/android-22/android.jar" "-F" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/app.ap_" "--auto-add-overlay" "--extra-packages" "ti.modules.titanium.ui:android.support.v7.appcompat" "-S" "/var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-1hzn6hq/res" "-S" "/var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-28066-ketk4m/res"
+[INFO]   Packaging application: /Users/aboynton/Library/Android/sdk/build-tools/21.1.2/aapt "package" "-f" "-m" "-J" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/gen" "-M" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/AndroidManifest.xml" "-A" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/assets" "-S" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/res" "-I" "/Users/aboynton/Library/Android/sdk/platforms/android-22/android.jar" "-F" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/app.ap_" "--auto-add-overlay" "--extra-packages" "ti.modules.titanium.ui:android.support.v7.appcompat" "-S" "/var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-w0w270/res" "-S" "/var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115716-33443-q72nuz/res"
 [INFO]   Building Java source files: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/javac "-J-Xmx256M" "-encoding" "utf8" "-bootclasspath" "/Users/aboynton/Library/Android/sdk/platforms/android-22/android.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-v8.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-analytics.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/aps-analytics.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-android.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/jaxen-1.1.1.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/ti-commons-codec-1.3.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-common.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/titanium.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-app.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-ui.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/nineoldandroids-appc-2.4.0.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-filesystem.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-media.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-appcompat.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v4.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v7-appcompat.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-locale.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-network.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/thirdparty.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-xml.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-utils.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-geolocation.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-accelerometer.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-contacts.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-map.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-calendar.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-gesture.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-platform.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-database.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/lib/titanium-verify.jar:R.class:ApplicationStylesheet.class:Week1projectActivity.class:Week1projectAppInfo.class:Week1projectApplication.class" "-d" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/classes" "-proc:none" "-target" "1.6" "-source" "1.6" "@/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/java-sources.txt"
 [INFO]   Running dexer: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/java "-Xmx1024M" "-XX:-UseGCOverheadLimit" "-Djava.ext.dirs=/Users/aboynton/Library/Android/sdk/platform-tools" "-jar" "/Users/aboynton/Library/Android/sdk/build-tools/21.1.2/lib/dx.jar" "--dex" "--output=/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/classes.dex" "/Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/classes" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/lib/titanium-verify.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-v8.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-analytics.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/aps-analytics.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-android.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/jaxen-1.1.1.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/ti-commons-codec-1.3.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-common.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/titanium.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-app.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-ui.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/nineoldandroids-appc-2.4.0.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-filesystem.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-media.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-appcompat.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v4.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v7-appcompat.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-locale.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-network.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/thirdparty.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-xml.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-utils.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-geolocation.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-accelerometer.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-contacts.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-map.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-calendar.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-gesture.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-platform.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-database.jar"
-[TRACE]  Found 1 devices, checking if any of them are the emulator...
-[TRACE]  Emulator is running!
-[TRACE]  Checking if boot animation has finished...
-[TRACE]  Emulator is not booted yet; checking again in 2000 ms
-[TRACE]  Emulator is not booted yet; checking again in 2000 ms
-[TRACE]  Emulator is booted, emitting booted event
-[INFO]   Emulator is booted
-[INFO]   SD card not required, skipping mount check
-[INFO]   Emulator ready!
 [INFO]   Creating unsigned apk
 [DEBUG]  Processing /Users/aboynton/Desktop/AVF1508/Week1Project/build/android/bin/app.ap_
 [DEBUG]  Deflating AndroidManifest.xml
@@ -217,6 +214,7 @@ Command
 [DEBUG]  Deflating assets/Resources/geo.js
 [DEBUG]  Adding assets/Resources/images/170.jpg
 [DEBUG]  Adding assets/Resources/images/328.jpg
+[DEBUG]  Adding assets/Resources/images/beach.jpeg
 [DEBUG]  Deflating assets/Resources/ti.cloud.js
 [DEBUG]  Deflating assets/Resources/ui.js
 [DEBUG]  Deflating assets/app.json
@@ -593,5 +591,40 @@ Command
 [INFO]   App successfully installed
 [INFO]   Starting app: edu.fullsail.Week1Project/.Week1projectActivity
 [DEBUG]  Trying to start the app...
-[INFO]   Application pid: 1278
-[INFO]   Project built successfully in 30s 851ms
+[INFO]   Application pid: 1983
+-- Start application log -----------------------------------------------------
+[INFO]   TiApplication: (main) [0,0] checkpoint, app created.
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 210K, 9%% free 3791K/4152K, paused 1ms+0ms, total 6ms
+[DEBUG]  dalvikvm: WAIT_FOR_CONCURRENT_GC blocked 2ms
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 341K, 12%% free 3896K/4420K, paused 0ms+0ms, total 2ms
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 214K, 8%% free 4150K/4504K, paused 2ms+3ms, total 6ms
+[INFO]   TiApplication: (main) [41,41] Titanium 4.1.0 (2015/07/06 11:15 d57aa7d)
+[DEBUG]  dalvikvm: Trying to load lib /data/app-lib/edu.fullsail.Week1Project-1/libstlport_shared.so 0xa5071818
+[INFO]   TiApplication: (main) [9,50] Titanium Javascript runtime: v8
+[DEBUG]  dalvikvm: Added shared lib /data/app-lib/edu.fullsail.Week1Project-1/libstlport_shared.so 0xa5071818
+[DEBUG]  dalvikvm: No JNI_OnLoad found in /data/app-lib/edu.fullsail.Week1Project-1/libstlport_shared.so 0xa5071818, skipping init
+[DEBUG]  dalvikvm: Trying to load lib /data/app-lib/edu.fullsail.Week1Project-1/libkroll-v8.so 0xa5071818
+[DEBUG]  dalvikvm: Added shared lib /data/app-lib/edu.fullsail.Week1Project-1/libkroll-v8.so 0xa5071818
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 352K, 11%% free 4184K/4680K, paused 1ms+1ms, total 4ms
+[INFO]   TiRootActivity: (main) [0,0] checkpoint, on root activity create, savedInstanceState: null
+[ERROR]  E/        : UID 10058 asks for /proc/cpuinfo
+[ERROR]  E/        : Unable to open file /data/data/.appwithABI2
+[ERROR]  E/        : Unable to open file /data/data/.appwithABI2neon
+[ERROR]  E/        : UID 10058 is not in ARM UID list files
+[WARN]   V8Object: (KrollRuntimeThread) [39,39] Runtime disposed, cannot set property 'userAgent'
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 144K, 8%% free 4306K/4680K, paused 2ms, total 2ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 4.673MB for 349068-byte allocation
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 8%% free 4647K/5024K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 6K, 8%% free 4641K/5024K, paused 2ms, total 2ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 5.000MB for 349068-byte allocation
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 8%% free 4982K/5368K, paused 3ms, total 3ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 8%% free 4982K/5368K, paused 2ms, total 2ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 5.333MB for 349068-byte allocation
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 7%% free 5323K/5712K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 7%% free 5665K/6056K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 7%% free 6006K/6400K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 6%% free 6348K/6744K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 6K, 6%% free 7038K/7432K, paused 2ms, total 2ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 12.868MB for 6144012-byte allocation
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 1K, 3%% free 13036K/13436K, paused 0ms+1ms, total 4ms
+[INFO]   Project built successfully in 29s 825ms
