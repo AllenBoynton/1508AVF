@@ -23,12 +23,12 @@ var checkData = function(json) {
 	
 	var icon = Ti.UI.createImageView({
 		image: json.current_observation.icon_url,
-		top: 80,
-		right: 50
+		top: 85,
+		right: 40
 	});
 	
 	var location = Ti.UI.createLabel(labelFormat);
-		location.top = 20;
+		location.top = 10;
 		location.left = 20;
 		location.text = json.current_observation.display_location.full;
 		
@@ -39,13 +39,13 @@ var checkData = function(json) {
 		time.text = json.current_observation.local_time_rfc822;
 		
 	var temp = Ti.UI.createLabel(labelFormat);
-		temp.top = location.top + 60;
+		temp.top = location.top + 70;
 		temp.left = 20;
 		temp.font = {fontSize: 46};
 		temp.text = json.current_observation.temp_f + " F";
 		
 	var weather = Ti.UI.createLabel(labelFormat);
-		weather.top = temp.top + 60;
+		weather.top = temp.top + 70;
 		weather.left = 20;
 		weather.text = json.current_observation.weather;
 		

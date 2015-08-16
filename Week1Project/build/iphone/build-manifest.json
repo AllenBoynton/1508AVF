@@ -14,7 +14,7 @@
 	"publisher": "aboynton",
 	"url": "http://www.mysite.com",
 	"version": "1.0",
-	"description": "",
+	"description": "undefined",
 	"copyright": "2015 by aboynton",
 	"guid": "3ece41e4-1384-4db2-9eee-48f7e369d9da",
 	"skipJSMinification": true,

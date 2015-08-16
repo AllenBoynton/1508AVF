@@ -1,3 +1,4 @@
+//org.eclipse.ui.commands/state/com.appcelerator.titanium.liveview.ui.togglestate/org.eclipse.ui.commands.toggleState=true
 //org.eclipse.ui.commands/state/com.aptana.editor.common.commands.toggleOutline/org.eclipse.ui.commands.toggleState=false
 //org.eclipse.ui.commands/state/com.aptana.explorer.commands.toggleAppExplorer/org.eclipse.ui.commands.toggleState=false
 ACTIVE_HYPERLINK_COLOR=13,17,113
