@@ -6,8 +6,17 @@
 // Set background
 Titanium.UI.setBackgroundColor("#000");
 
-// Loading js file
-var geo = require("geo");
+// Check network connectivity
+if (Ti.Network.online) {
+	Ti.API.info("online");
+	var geo = require("geo");
+	geo.getGeo();
+	
+// If no connection revert to stored data
+} else {
+	Ti.API.info("No connection found");
+	alert("No network connection found. Change Settings or tap OK to see most recent data.");
+	storage.read();
+};
 
-// Globally sharing function getGeo
-geo.getGeo();
+var storage = require("storage");

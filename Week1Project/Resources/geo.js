@@ -1,5 +1,4 @@
 // Function is collecting information for geolocation and local weather
-
 var api = require("api");
 
 var getGeo = function(){
