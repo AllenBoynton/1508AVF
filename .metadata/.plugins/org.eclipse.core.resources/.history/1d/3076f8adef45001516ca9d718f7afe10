@@ -1,0 +1,150 @@
+// This function creates the page layout and data presented on the screen that references the API	
+
+var app = require("app");
+var storage = require("storage");
+var api = require("api");
+
+// Function to add the json data text to each label
+var addText = function(backUp){
+	location.text 	= backUp.location;
+	time.text 		= backUp.time;
+	temp.text 		= backUp.temp + " F";
+	highLow.text 	= backUp.highLow + "/" + tempLow;
+	weather.text 	= backUp.weather;
+	feels.text 		= "Feels like " + backUp.feels + " F";
+	recordHigh.text = "Record High: " + backUp.recordHigh + " F";
+	recordLow.text 	= "Record Low: " + backUp.recordHigh + " F";
+	wind.text 		= backUp.wind;
+	humidity.text 	= backUp.humidity;
+	uv.text 		= backUp.text;
+	dewPoint.text 	= backUp.dewPoint;
+	pressure.text 	= backUp.pressure;
+	visibility.text = backUp.visibility;
+	updateInfo.text = backUp.updateInfo;
+};
+	
+var win = Ti.UI.createWindow({
+	backgroundColor: "gray",
+	layout: "vertical"
+});
+
+var labelFormat = {
+	color: "white",
+	font: {fontSize: 16, fontWeight: "bold", fontFamily: "Roboto"}
+};
+
+var bg = Ti.UI.createView({
+	backgroundImage: "images/170.jpg",
+	top: 20,
+	height: "100%",
+	width: "100%"
+});
+
+var location = Ti.UI.createLabel(labelFormat);
+	location.top = 10;
+	location.left = 20;
+	
+	
+var time = Ti.UI.createLabel(labelFormat);
+	time.top = location.top + 20;
+	time.left = 20;
+	time.font = {fontSize: 12, fontWeight: "bold", fontFamily: "Roboto"};
+	
+	
+var temp = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+	
+	
+var highLow = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+		
+var weather = Ti.UI.createLabel(labelFormat);
+	weather.top = temp.top + 70;
+	weather.left = 20;
+	
+	
+var feels = Ti.UI.createLabel(labelFormat);
+	feels.top = weather.top + 20;
+	feels.left = 20;
+	
+	
+var recordHigh = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+	
+var recordLow = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+	temp.text = json.current_observation.temp_f + " F";
+		
+var wind = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+	
+	
+var humidity = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+	
+	
+var uv = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+	
+	
+var dewPoint = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+	
+	
+var pressure = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+	
+	
+var visibility = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 70;
+	temp.left = 20;
+	temp.font = {fontSize: 46};
+	
+	
+var updateInfo = Ti.UI.createLabel(labelFormat);
+	updateInfo.textAlign = "center";
+	updateInfo.left = 20;
+	updateInfo.right = 20;
+	updateInfo.bottom = 30;
+	updateInfo.color = "yellow";
+	
+		
+	win.add(bg);
+	bg.add(location);
+	bg.add(time);
+	bg.add(temp);
+	bg.add(highLow);
+	bg.add(weather);
+	bg.add(feels);
+	bg.add(recordHigh);
+	bg.add(recordLow);
+	bg.add(wind);
+	bg.add(humidity);
+	bg.add(uv);
+	bg.add(dewPoint);
+	bg.add(pressure);
+	bg.add(visibility);
+	bg.add(updateInfo);
+	win.open();
+	
+
+
+exports.addText = addText;

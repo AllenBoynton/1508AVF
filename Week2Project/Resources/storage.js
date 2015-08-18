@@ -31,7 +31,7 @@ var read = function(){
 };
 
 // Function saves data to database
-var save = function(w){
+var saves = function(w){
 	var database = Ti.Database.open("locationBu");
       database.execute("CREATE TABLE IF NOT EXISTS saveTBL (id INTEGER PRIMARY KEY, location TEXT, time TEXT, temp TEXT, highLow TEXT, weather TEXT, feels TEXT, recordHigh TEXT, recordLow INTEGER, wind TEXT, humidity TEXT, uv TEXT, dewPoint TEXT, pressure TEXT, visibility TEXT, updateInfo TEXT)");
       database.execute("DELETE FROM saveTBL");
