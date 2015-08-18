@@ -1,6 +1,7 @@
 // Function is collecting information for geolocation and local weather
 
 var api = require("api");
+var ui = require("ui");
 
 var getGeo = function(){
 	Ti.Geolocation.purpose = "Current location is needed to get your local weather.";

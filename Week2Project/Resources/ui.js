@@ -52,18 +52,18 @@ var time = Ti.UI.createLabel(labelFormat);
 	time.text = "time";
 	
 var temp = Ti.UI.createLabel(labelFormat);
-	temp.top = location.top + 70;
+	temp.top = location.top + 60;
 	temp.left = 20;
 	temp.font = {fontSize: 46};
 	temp.text = "temp";
 	
 var highLow = Ti.UI.createLabel(labelFormat);
-	highLow.top = location.top + 70;
-	highLow.left = temp.left + 50;
+	highLow.top = location.top + 85;
+	highLow.left = temp.left + 125;
 	highLow.text = "highLow";
 		
 var weather = Ti.UI.createLabel(labelFormat);
-	weather.top = temp.top + 70;
+	weather.top = temp.top + 80;
 	weather.left = 20;
 	weather.text = "weather";
 	
@@ -73,7 +73,7 @@ var feels = Ti.UI.createLabel(labelFormat);
 	feels.text = "feels";
 	
 var recordHigh = Ti.UI.createLabel(labelFormat);
-	recordHigh.top = feels.top + 40;
+	recordHigh.top = feels.top + 50;
 	recordHigh.left = 20;
 
 	recordHigh.text = "recordHigh";
@@ -84,9 +84,8 @@ var recordLow = Ti.UI.createLabel(labelFormat);
 	recordLow.text = "recordLow";
 		
 var wind = Ti.UI.createLabel(labelFormat);
-	wind.top = location.top + 70;
+	wind.top = recordLow.top + 150;
 	wind.left = 20;
-	wind.font = {fontSize: 46};
 	wind.text = "wind";
 	
 var humidity = Ti.UI.createLabel(labelFormat);
@@ -100,7 +99,7 @@ var uv = Ti.UI.createLabel(labelFormat);
 	uv.text = "uv";
 	
 var dewPoint = Ti.UI.createLabel(labelFormat);
-	dewPoint.top = location.top + 70;
+	dewPoint.top = recordLow.top + 150;
 	dewPoint.right = 20;
 	dewPoint.text = "dewPoint";
 	
@@ -118,8 +117,9 @@ var updateInfo = Ti.UI.createLabel(labelFormat);
 	updateInfo.textAlign = "center";
 	updateInfo.left = 20;
 	updateInfo.right = 20;
-	updateInfo.bottom = 30;
+	updateInfo.bottom = 25;
 	updateInfo.color = "yellow";
+	updateInfo.text = "updateInfo";
 	
 // Main code		
 win.add(bg);

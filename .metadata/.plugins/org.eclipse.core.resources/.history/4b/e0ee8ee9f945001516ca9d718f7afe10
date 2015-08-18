@@ -1,0 +1,47 @@
+// Module to read function
+
+var read = function(){
+	var database = Ti.Database.open("locationBu");
+	var results = database.execute("SELECT * FROM saveTBL");
+	var rowCount = results.rowCount;
+	while (results.isValidRow()){
+		var backup = {
+			location: 	results.fieldName ("location"),
+			time: 		results.fieldName ("time"),
+			temp: 		results.fieldName ("temp"),
+			highLow: 	results.fieldName ("highLow"),
+			weather: 	results.fieldName ("weather"),
+			feels: 		results.fieldName ("feels"),
+			recordHigh: results.fieldName ("recordHigh"),
+			recordLow: 	results.fieldName ("recordLow"),
+			wind: 		results.fieldName ("wind"),
+			humidity: 	results.fieldName ("humidity"),
+			uv: 		results.fieldName ("uv"),
+			dewPoint: 	results.fieldName ("dewPoint"),
+			pressure: 	results.fieldName ("pressure"),
+			visibility: results.fieldName ("visibility"),
+			updateInfo: results.fieldName ("updateInfo"),
+		};
+		results.next();
+	}
+	results.close();
+	database.close();
+	var ui = require("ui");
+	ui.update(backup);
+};
+
+// Function saves data to database
+var saves = function(w){
+	var database = Ti.Database.open("locationBu");
+      database.execute("CREATE TABLE IF NOT EXISTS saveTBL (location TEXT, time TEXT, temp TEXT, highLow TEXT, weather TEXT, feels TEXT, recordHigh TEXT, recordLow INTEGER, wind TEXT, humidity TEXT, uv TEXT, dewPoint TEXT, pressure TEXT, visibility TEXT, updateInfo TEXT)");
+      database.execute("DELETE FROM saveTBL");
+      database.execute("INSERT INTO saveTBL (location, time, temp, highLow, weather, feels, recordHigh, recordLow, wind, humidity, uv, dewPoint, pressure, visibility, updateInfo) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", w.location, w.time, w.highLow, w.weather, w.feels, w.recordHigh, w.recordLow, w.wind, w.humidity, w.uv, w.dewPoint, w.pressure, w.visibility, w.updateInfo);
+      var rowID = database.lastInsertRowId;
+      var rowCount = database.rowCount;
+      database.close();
+      read();
+};
+
+// Exports
+exports.saves = saves;
+exports.read = read;
