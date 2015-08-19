@@ -2,7 +2,7 @@
 var ui = require("ui");
 
 var netCheck = function(latitude,longitude) {
-	var url = "http://api.wunderground.com/api/d2e13383813c88c5/conditions/alerts/almanac/q/34.8621210,-82.3539020/json";		
+	var url = "http://api.wunderground.com/api/d2e13383813c88c5/geolookup/conditions/q/34.8621210,-82.3539020/json";		
 	if (Ti.Network.online == true) {
 		var geo = require("geo");
 		var client = Ti.Network.createHTTPClient({    
@@ -20,18 +20,9 @@ var netCheck = function(latitude,longitude) {
 		client.open("GET", url);
 		client.send();
 	} else {
-		alert ("Network is unavailable. Please check Settings or tap OK to view last used data.");
-		var storage = require("storage");
-		Ti.API.info("No connection found.");
-		storage.read();	
-	};
+		alert ("Network is unavailable. Please check Settings.");	
+	}
     	      	         
 };
-
-win.addEventListener("swipe", function(e) {
-	if (e.direction == "down") {
-		netCheck();
-	} 
-});
-
+	
 exports.netCheck = netCheck;

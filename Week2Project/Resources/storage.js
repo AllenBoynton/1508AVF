@@ -1,43 +1,45 @@
 // Module to read function
 
+var ui = require("ui");
+
 var read = function(){
-	var database = Ti.Database.open("dataBackUp");
-	var results = database.execute("SELECT * FROM saveTBL");
-	var rowCount = results.rowCount;
-	while (results.isValidRow()){
-		var backup = {
-			location: 	results.fieldName ("location"),
-			time: 		results.fieldName ("time"),
-			temp: 		results.fieldName ("temp"),
-			highLow: 	results.fieldName ("highLow"),
-			tempLow:	results.fieldName ("tempLow"),
-			weather: 	results.fieldName ("weather"),
-			feels: 		results.fieldName ("feels"),
-			recordHigh: results.fieldName ("recordHigh"),
-			highYear:	results.fieldName ("highYear"),
-			recordLow: 	results.fieldName ("recordLow"),
-			lowYear:	results.fieldName ("lowYear"),
-			wind: 		results.fieldName ("wind"),
-			windDir:	results.fieldName ("windDir"),
-			humidity: 	results.fieldName ("humidity"),
-			uv: 		results.fieldName ("uv"),
-			dewPoint: 	results.fieldName ("dewPoint"),
-			pressure: 	results.fieldName ("pressure"),
-			visibility: results.fieldName ("visibility"),
-			updateInfo: results.fieldName ("updateInfo"),
+	var db = Ti.Database.open("weatherInfo");
+	db.execute("CREATE TABLE IF NOT EXISTS saveTBL (id INTEGER PRIMARY KEY, location TEXT, time TEXT, temp TEXT, highLow TEXT, tempLow TEXT, weather TEXT, feels TEXT, recordHigh TEXT, highYear TEXT, recordLow INTEGER, lowYear TEXT, wind TEXT, windDir TEXT, humidity TEXT, uv TEXT, dewPoint TEXT, pressure TEXT, visibility TEXT, updateInfo TEXT)");
+	var dbRows = db.execute("SELECT location, time, temp, highLow, tempLow, weather, feels, recordHigh, highYear, recordLow, lowYear, wind, windDir, humidity, uv, dewPoint, pressure, visibility, updateInfo FROM saveTBL");
+	while (dbRows.isValidRow()){
+		var info = {
+			id:			dbRows.fieldByName ("id"),
+			location: 	dbRows.fieldByName ("location"),
+			time: 		dbRows.fieldByName ("time"),
+			temp: 		dbRows.fieldByName ("temp"),
+			highLow: 	dbRows.fieldByName ("highLow"),
+			tempLow:	dbRows.fieldByName ("tempLow"),
+			weather: 	dbRows.fieldByName ("weather"),
+			feels: 		dbRows.fieldByName ("feels"),
+			recordHigh: dbRows.fieldByName ("recordHigh"),
+			highYear:	dbRows.fieldByName ("highYear"),
+			recordLow: 	dbRows.fieldByName ("recordLow"),
+			lowYear:	dbRows.fieldByName ("lowYear"),
+			wind: 		dbRows.fieldByName ("wind"),
+			windDir:	dbRows.fieldByName ("windDir"),
+			humidity: 	dbRows.fieldByName ("humidity"),
+			uv: 		dbRows.fieldByName ("uv"),
+			dewPoint: 	dbRows.fieldByName ("dewPoint"),
+			pressure: 	dbRows.fieldByName ("pressure"),
+			visibility: dbRows.fieldByName ("visibility"),
+			updateInfo: dbRows.fieldByName ("updateInfo"),
 		};
-		results.next();
+		dbRows.next();
 	}
-	results.close();
-	database.close();
+	dbRows.close();
+	db.close();
 	var ui = require("ui");
-	ui.update(backup);
+	ui.display(info);
 };
 
 // Function saves data to database
-var saves = function(w){
+var saves = function(weatherInfo){
 	var database = Ti.Database.open("dataBackUp");
-      database.execute("CREATE TABLE IF NOT EXISTS saveTBL (location TEXT, time TEXT, temp TEXT, highLow TEXT, tempLow TEXT, weather TEXT, feels TEXT, recordHigh TEXT, highYear TEXT, recordLow INTEGER, lowYear TEXT, wind TEXT, windDir TEXT, humidity TEXT, uv TEXT, dewPoint TEXT, pressure TEXT, visibility TEXT, updateInfo TEXT)");
       database.execute("DELETE FROM saveTBL");
       database.execute("INSERT INTO saveTBL (location, time, temp, highLow, tempLow, weather, feels, recordHigh, highYear, recordLow, lowYear, wind, windDir, humidity, uv, dewPoint, pressure, visibility, updateInfo) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", w.location, w.time, w.highLow, w.weather, w.feels, w.recordHigh, w.recordLow, w.wind, w.humidity, w.uv, w.dewPoint, w.pressure, w.visibility, w.updateInfo);
       var rowID = database.lastInsertRowId;
