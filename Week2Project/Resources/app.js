@@ -9,15 +9,15 @@ Titanium.UI.setBackgroundColor("#000");
 // Check network connectivity
 if (Ti.Network.online) {
 	Ti.API.info("online");
-	var geo = require("geo");
-	var api = require("api");
 	var ui = require("ui");
+	var api = require("api");
+	var geo = require("geo");
 	geo.getGeo();
 	
 // If no connection revert to stored data
 } else {
-	Ti.API.info("No connection found");
 	alert("No network connection found. Change Settings or tap OK to see most recent data.");
 	var storage = require("storage");
+	Ti.API.info("No connection found");
 	storage.read();
 };

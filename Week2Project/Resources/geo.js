@@ -3,7 +3,7 @@
 var api = require("api");
 var ui = require("ui");
 
-var getGeo = function(){
+var getGeo = function(e){
 	Ti.Geolocation.purpose = "Current location is needed to get your local weather.";
 	Ti.Geolocation.getCurrentPosition(function(e) {
 		if(Ti.Platform.osname === "android") {

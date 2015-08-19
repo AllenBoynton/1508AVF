@@ -2,12 +2,11 @@
 var ui = require("ui");
 
 var netCheck = function(latitude,longitude) {
-	Ti.API.info();
 	var url = "http://api.wunderground.com/api/d2e13383813c88c5/conditions/alert/almanac/q/34.8621210,-82.3539020.json";		
 	if (Ti.Network.online == true) {
 		var geo = require("geo");
 		var client = Ti.Network.createHTTPClient({    
-			onload: function() {
+			onload: function(e){
 				var json = JSON.parse(this.responseText);
 				var weatherData = {
 					location: 	json.current_observation.display_location.full,
@@ -34,11 +33,11 @@ var netCheck = function(latitude,longitude) {
 				storage.saves(weatherData);
 			},
 			// Runs if there is an error
-			onerror: function() {
+			onerror: function(e) {
 				alert ("Unexpected error");
 			},
 			// Timeout set to 5 milliseconds
-			timeout: 5000,
+			timeout: 5000
 		});	    
 		client.open("GET", url);
 		client.send();

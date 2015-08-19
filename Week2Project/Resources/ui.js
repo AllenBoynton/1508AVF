@@ -75,7 +75,6 @@ var feels = Ti.UI.createLabel(labelFormat);
 var recordHigh = Ti.UI.createLabel(labelFormat);
 	recordHigh.top = feels.top + 50;
 	recordHigh.left = 20;
-
 	recordHigh.text = "recordHigh";
 	
 var recordLow = Ti.UI.createLabel(labelFormat);
@@ -121,6 +120,8 @@ var updateInfo = Ti.UI.createLabel(labelFormat);
 	updateInfo.color = "yellow";
 	updateInfo.text = "updateInfo";
 	
+exports.addText = addText;
+
 // Main code		
 win.add(bg);
 bg.add(location);
@@ -139,5 +140,4 @@ bg.add(pressure);
 bg.add(visibility);
 bg.add(updateInfo);
 win.open();
-	
-exports.addText = addText;
+
