@@ -1,128 +1,119 @@
 // This function creates the page layout and data presented on the screen that references the API	
+var win = Ti.UI.createWindow({
+	backgroundColor: "gray",
+	layout: "vertical"
+});
 
-// var app = require("app");
-// var storage = require("storage");
-// var api = require("api");
+var labelFormat = {
+	color: "white",
+	left: 20,
+	font: {fontSize: 16, fontWeight: "bold", fontFamily: "Roboto"}
+};
+
+var bg = Ti.UI.createView({
+	backgroundImage: "images/170.jpg",
+	top: 20,
+	height: "100%",
+	width: "100%"
+});
+
+var location = Ti.UI.createLabel(labelFormat);
+	location.top = 10;
+	location.text = "location";
+	
+var time = Ti.UI.createLabel(labelFormat);
+	time.top = location.top + 20;
+	time.font = {fontSize: 12, fontWeight: "bold", fontFamily: "Roboto"};
+	time.text = "time";
+	
+var temp = Ti.UI.createLabel(labelFormat);
+	temp.top = location.top + 60;
+	temp.font = {fontSize: 46};
+	temp.text = "temp";
+	
+var highLow = Ti.UI.createLabel(labelFormat);
+	highLow.top = location.top + 85;
+	highLow.left = temp.left + 125;
+	highLow.text = "highLow";
+		
+var weather = Ti.UI.createLabel(labelFormat);
+	weather.top = temp.top + 80;
+	weather.text = "weather";
+	
+var feels = Ti.UI.createLabel(labelFormat);
+	feels.top = weather.top + 20;
+	feels.text = "feels";
+	
+var recordHigh = Ti.UI.createLabel(labelFormat);
+	recordHigh.top = feels.top + 50;
+	recordHigh.text = "recordHigh";
+	
+var recordLow = Ti.UI.createLabel(labelFormat);
+	recordLow.top = recordHigh.top + 20;
+	recordLow.text = "recordLow";
+		
+var wind = Ti.UI.createLabel(labelFormat);
+	wind.top = recordLow.top + 150;
+	wind.text = "wind";
+	
+var humidity = Ti.UI.createLabel(labelFormat);
+	humidity.top = wind.top + 20;
+	humidity.text = "humidity";
+	
+var uv = Ti.UI.createLabel(labelFormat);
+	uv.top = humidity.top + 20;
+	uv.text = "uv";
+	
+var dewPoint = Ti.UI.createLabel(labelFormat);
+	dewPoint.top = recordLow.top + 150;
+	dewPoint.left = null;
+	dewPoint.right = 20;
+	dewPoint.text = "dewPoint";
+	
+var pressure = Ti.UI.createLabel(labelFormat);
+	pressure.top = dewPoint.top + 20;
+	pressure.left = null;
+	pressure.right = 20;
+	pressure.text = "pressure";
+	
+var visibility = Ti.UI.createLabel(labelFormat);
+	visibility.top = pressure.top + 20;
+	visibility.left = null;
+	visibility.right = 20;
+	visibility.text = "visibility";
+	
+var updateInfo = Ti.UI.createLabel(labelFormat);
+	updateInfo.textAlign = "center";
+	updateInfo.right = 20;
+	updateInfo.bottom = 25;
+	updateInfo.color = "yellow";
+	updateInfo.text = "updateInfo";
 
 // Function to add the json data text to each label
-var addText = function(backUp){
-	location.text 	= backUp.location;
-	time.text 		= backUp.time;
-	temp.text 		= backUp.temp + " F";
-	highLow.text 	= backUp.highLow + " F /" + backUp.tempLow + " F";
-	weather.text 	= backUp.weather;
-	feels.text 		= "Feels like " + backUp.feels + " F";
-	recordHigh.text = "Record High: " + backUp.recordHigh + " F in " + backUp.highYear;
-	recordLow.text 	= "Record Low: " + backUp.recordHigh + " F in " + backUp.lowYear;
-	wind.text 		= backUp.wind + " mph " + backUp.windDir;
-	humidity.text 	= "Humidity: " + backUp.humidity;
-	uv.text 		= "UV index: " + backUp.uv;
-	dewPoint.text 	= "Dew point: " + backUp.dewPoint + " F";
-	pressure.text 	= "Pressure: " + backUp.pressure + " mB-";
-	visibility.text = "Visibility: " + backUp.visibility + " mi";
-	updateInfo.text = backUp.updateInfo;
+var addText = function(e){
+	if(Ti.App.Properties.getString("weatherInfo") != null){
+		location.text 	= info.location;
+		time.text 		= info.time;
+		temp.text 		= info.temp + " F";
+		highLow.text 	= info.highLow + " F /" + info.tempLow + " F";
+		weather.text 	= info.weather;
+		feels.text 		= "Feels like " + info.feels + " F";
+		recordHigh.text = "Record High: " + info.recordHigh + " F in " + info.highYear;
+		recordLow.text 	= "Record Low: " + info.recordHigh + " F in " + info.lowYear;
+		wind.text 		= info.wind + " mph " + info.windDir;
+		humidity.text 	= "Humidity: " + info.humidity;
+		uv.text 		= "UV index: " + info.uv;
+		dewPoint.text 	= "Dew point: " + info.dewPoint + " F";
+		pressure.text 	= "Pressure: " + info.pressure + " mB-";
+		visibility.text = "Visibility: " + info.visibility + " mi";
+		updateInfo.text = info.updateInfo;
+	}else{
+		alert("No data available. Please try again soon.");
+	}
 };
-	
 
-	var win = Ti.UI.createWindow({
-		backgroundColor: "gray",
-		layout: "vertical"
-	});
-	
-	var labelFormat = {
-		color: "white",
-		font: {fontSize: 16, fontWeight: "bold", fontFamily: "Roboto"}
-	};
-	
-	var bg = Ti.UI.createView({
-		backgroundImage: "images/170.jpg",
-		top: 20,
-		height: "100%",
-		width: "100%"
-	});
-	
-	var location = Ti.UI.createLabel(labelFormat);
-		location.top = 10;
-		location.left = 20;
-		location.text = "location";
-		
-	var time = Ti.UI.createLabel(labelFormat);
-		time.top = location.top + 20;
-		time.left = 20;
-		time.font = {fontSize: 12, fontWeight: "bold", fontFamily: "Roboto"};
-		time.text = "time";
-		
-	var temp = Ti.UI.createLabel(labelFormat);
-		temp.top = location.top + 60;
-		temp.left = 20;
-		temp.font = {fontSize: 46};
-		temp.text = "temp";
-		
-	var highLow = Ti.UI.createLabel(labelFormat);
-		highLow.top = location.top + 85;
-		highLow.left = temp.left + 125;
-		highLow.text = "highLow";
-			
-	var weather = Ti.UI.createLabel(labelFormat);
-		weather.top = temp.top + 80;
-		weather.left = 20;
-		weather.text = "weather";
-		
-	var feels = Ti.UI.createLabel(labelFormat);
-		feels.top = weather.top + 20;
-		feels.left = 20;
-		feels.text = "feels";
-		
-	var recordHigh = Ti.UI.createLabel(labelFormat);
-		recordHigh.top = feels.top + 50;
-		recordHigh.left = 20;
-		recordHigh.text = "recordHigh";
-		
-	var recordLow = Ti.UI.createLabel(labelFormat);
-		recordLow.top = recordHigh.top + 20;
-		recordLow.left = 20;
-		recordLow.text = "recordLow";
-			
-	var wind = Ti.UI.createLabel(labelFormat);
-		wind.top = recordLow.top + 150;
-		wind.left = 20;
-		wind.text = "wind";
-		
-	var humidity = Ti.UI.createLabel(labelFormat);
-		humidity.top = wind.top + 20;
-		humidity.left = 20;
-		humidity.text = "humidity";
-		
-	var uv = Ti.UI.createLabel(labelFormat);
-		uv.top = humidity.top + 20;
-		uv.left = 20;
-		uv.text = "uv";
-		
-	var dewPoint = Ti.UI.createLabel(labelFormat);
-		dewPoint.top = recordLow.top + 150;
-		dewPoint.right = 20;
-		dewPoint.text = "dewPoint";
-		
-	var pressure = Ti.UI.createLabel(labelFormat);
-		pressure.top = dewPoint.top + 20;
-		pressure.right = 20;
-		pressure.text = "pressure";
-		
-	var visibility = Ti.UI.createLabel(labelFormat);
-		visibility.top = pressure.top + 20;
-		visibility.right = 20;
-		visibility.text = "visibility";
-		
-	var updateInfo = Ti.UI.createLabel(labelFormat);
-		updateInfo.textAlign = "center";
-		updateInfo.left = 20;
-		updateInfo.right = 20;
-		updateInfo.bottom = 25;
-		updateInfo.color = "yellow";
-		updateInfo.text = "updateInfo";
-	
-exports.addText = addText;
 
+	
 // Main code		
 win.add(bg);
 bg.add(location);
@@ -142,3 +133,4 @@ bg.add(visibility);
 bg.add(updateInfo);
 win.open();
 
+exports.addText = addText;

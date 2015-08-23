@@ -1,0 +1,3 @@
+dependencies: \
+  /Users/aboynton/Desktop/AVF1508/demoApp/build/iphone/Classes/ApplicationRouting.m \
+  /Users/aboynton/Desktop/AVF1508/demoApp/build/iphone/Classes/ApplicationRouting.h

@@ -9,7 +9,6 @@ Titanium.UI.setBackgroundColor("#000");
 // Check network connectivity
 if (Ti.Network.online) {
 	Ti.API.info("online");
-	var ui = require("ui");
 	var api = require("api");
 	var geo = require("geo");
 	geo.getGeo();
