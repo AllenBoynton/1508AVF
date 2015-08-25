@@ -85,22 +85,22 @@ var updateInfo = Ti.UI.createLabel(labelFormat);
 	updateInfo.text = "updateInfo";
 
 // Function to add the json data text to each label
-var addText = function(info){
-		location.text 	= info.location;
-		time.text 		= info.time;
-		temp.text 		= info.temp + " F";
-		highLow.text 	= info.highLow + " F /" + info.tempLow + " F";
-		weather.text 	= info.weather;
-		feels.text 		= "Feels like " + info.feels + " F";
-		recordHigh.text = "Record High: " + info.recordHigh + " F in " + info.highYear;
-		recordLow.text 	= "Record Low: " + info.recordHigh + " F in " + info.lowYear;
-		wind.text 		= info.wind + " mph " + info.windDir;
-		humidity.text 	= "Humidity: " + info.humidity;
-		uv.text 		= "UV index: " + info.uv;
-		dewPoint.text 	= "Dew point: " + info.dewPoint + " F";
-		pressure.text 	= "Pressure: " + info.pressure + " mB-";
-		visibility.text = "Visibility: " + info.visibility + " mi";
-		updateInfo.text = info.updateInfo;
+var addText = function(weatherInfo){
+		location.text 	= weatherInfo.location;
+		time.text 		= weatherInfo.time;
+		temp.text 		= weatherInfo.temp + " F";
+		highLow.text 	= weatherInfo.highLow + " F /" + weatherInfo.tempLow + " F";
+		weather.text 	= weatherInfo.weather;
+		feels.text 		= "Feels like " + weatherInfo.feels + " F";
+		recordHigh.text = "Record High: " + weatherInfo.recordHigh + " F in " + weatherInfo.highYear;
+		recordLow.text 	= "Record Low: " + weatherInfo.recordHigh + " F in " + weatherInfo.lowYear;
+		wind.text 		= weatherInfo.wind + " mph " + weatherInfo.windDir;
+		humidity.text 	= "Humidity: " + weatherInfo.humidity;
+		uv.text 		= "UV index: " + weatherInfo.uv;
+		dewPoint.text 	= "Dew point: " + weatherInfo.dewPoint + " F";
+		pressure.text 	= "Pressure: " + weatherInfo.pressure + " mB-";
+		visibility.text = "Visibility: " + weatherInfo.visibility + " mi";
+		updateInfo.text = weatherInfo.updateInfo;
 };
 
 // Main code		

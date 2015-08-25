@@ -1,0 +1,46 @@
+// Module to read function
+// Ti.Database.install("weatherStorage.sqlite", "weatherStorage");
+var read = function(weatherInfo){
+	var db = Ti.Database.open();
+	db.execute("CREATE TABLE IF NOT EXISTS saveTBL (id INTEGER PRIMARY KEY, location TEXT, time TEXT, temp TEXT, highLow TEXT, tempLow TEXT, weather TEXT, feels TEXT, recordHigh TEXT, highYear TEXT, recordLow INTEGER, lowYear TEXT, wind TEXT, windDir TEXT, humidity TEXT, uv TEXT, dewPoint TEXT, pressure TEXT, visibility TEXT, updateInfo TEXT)");
+	var dbRows = db.execute("SELECT location, time, temp, highLow, tempLow, weather, feels, recordHigh, highYear, recordLow, lowYear, wind, windDir, humidity, uv, dewPoint, pressure, visibility, updateInfo FROM saveTBL");
+		while (dbRows.isValidRow()){
+		{
+			var location  	= dbRows.fieldByName ("location");
+			var time  		= dbRows.fieldByName ("time");
+			var temp 		= dbRows.fieldByName ("temp");
+			var	highLow 	= dbRows.fieldByName ("highLow");
+			var tempLow		= dbRows.fieldByName ("tempLow");
+			var weather 	= dbRows.fieldByName ("weather");
+			var feels 		= dbRows.fieldByName ("feels");
+			var recordHigh 	= dbRows.fieldByName ("recordHigh");
+			var highYear	= dbRows.fieldByName ("highYear");
+			var recordLow 	= dbRows.fieldByName ("recordLow");
+			var lowYear		= dbRows.fieldByName ("lowYear");
+			var wind 		= dbRows.fieldByName ("wind");
+			var windDir		= dbRows.fieldByName ("windDir");
+			var humidity 	= dbRows.fieldByName ("humidity");
+			var uv 			= dbRows.fieldByName ("uv");
+			var dewPoint 	= dbRows.fieldByName ("dewPoint");
+			var pressure 	= dbRows.fieldByName ("pressure");
+			var visibility 	= dbRows.fieldByName ("visibility");
+			var updateInfo 	= dbRows.fieldByName ("updateInfo");
+		};
+		dbRows.next();
+	}
+	dbRows.close();
+	db.close();
+	ui.addText();
+};
+
+// Function saves data to database
+var saves = function(weatherInfo){
+	var db = Ti.Database.open();
+	db.execute("CREATE TABLE IF NOT EXISTS saveTBL (id INTEGER PRIMARY KEY, location TEXT, time TEXT, temp TEXT, highLow TEXT, tempLow TEXT, weather TEXT, feels TEXT, recordHigh TEXT, highYear TEXT, recordLow INTEGER, lowYear TEXT, wind TEXT, windDir TEXT, humidity TEXT, uv TEXT, dewPoint TEXT, pressure TEXT, visibility TEXT, updateInfo TEXT)");
+	db.execute("INSERT INTO saveTBL (location, time, temp, highLow, tempLow, weather, feels, recordHigh, highYear, recordLow, lowYear, wind, windDir, humidity, uv, dewPoint, pressure, visibility, updateInfo) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", weatherInfo.location, weatherInfo.time, weatherInfo.highLow, weatherInfo.weather, weatherInfo.feels, weatherInfo.recordHigh, weatherInfo.recordLow, weatherInfo.wind, weatherInfo.humidity, weatherInfo.uv, weatherInfo.dewPoint, weatherInfo.pressure, weatherInfo.visibility, weatherInfo.updateInfo);   
+    db.close();
+    read();
+};
+// Exports
+exports.saves = saves;
+exports.read = read;

@@ -1,7 +1,0 @@
-"/Users/aboynton/Desktop/AVF1508/Week2Project/build/android/gen/android/support/v7/appcompat/R.java"
-"/Users/aboynton/Desktop/AVF1508/Week2Project/build/android/gen/edu/fullsail/Week2Project/ApplicationStylesheet.java"
-"/Users/aboynton/Desktop/AVF1508/Week2Project/build/android/gen/edu/fullsail/Week2Project/R.java"
-"/Users/aboynton/Desktop/AVF1508/Week2Project/build/android/gen/edu/fullsail/Week2Project/Week2projectActivity.java"
-"/Users/aboynton/Desktop/AVF1508/Week2Project/build/android/gen/edu/fullsail/Week2Project/Week2projectAppInfo.java"
-"/Users/aboynton/Desktop/AVF1508/Week2Project/build/android/gen/edu/fullsail/Week2Project/Week2projectApplication.java"
-"/Users/aboynton/Desktop/AVF1508/Week2Project/build/android/gen/ti/modules/titanium/ui/R.java"
