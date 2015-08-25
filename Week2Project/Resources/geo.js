@@ -1,25 +1,17 @@
 // Function is collecting information for geolocation and local weather
-var osname = Ti.Platform.osname;
-var online = Ti.Network.online;
-var location = Ti.Geolocation.locationServicesEnabled;
-
-if(osname === "android"){
-	Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_HIGH;
-};
+var api = require("api");
 
 var getGeo = function(){
-		Ti.Geolocation.purpose = "Current location is needed to get your local weather.";
-		Ti.Geolocation.getCurrentPosition(function(e) {
-			if(osname === "android") {
-				var latitude = 34.8621210;
-				var longitude = -82.3539020;
-				api.netCheck(latitude,longitude);
-			} else {
-				var latitude = e.coords.latitude;
-				var longitude = e.coords.longitude;
-				api.netCheck(latitude,longitude);
-			};
-		});
+	Ti.Geolocation.purpose = "Current location is needed to get your local weather.";
+	Ti.Geolocation.getCurrentPosition(function(e){
+		if(Ti.Platform.osname === "android") {
+			var latitude = 34.8621210;
+			var longitude = -82.3539020;
+		} else {
+			var latitude = e.coords.latitude;
+			var longitude = e.coords.longitude;
+		}
+	});
 };
 
 win.addEventListener("swipe", function(e){

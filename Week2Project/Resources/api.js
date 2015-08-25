@@ -1,12 +1,11 @@
 // Function to check for network connectivity
-var netCheck = function(latitude,longitude) {
-	var url = "http://api.wunderground.com/api/d2e13383813c88c5/conditions/alert/almanac/q/" + latitude + "," + longitude + "/json";		
-	if (Ti.Network.online == true) {
-		// var geo = require("geo");
+var netCheck = function(latitude, longitude){
+	var url = "http://api.wunderground.com/api/d2e13383813c88c5/conditions/alert/almanac/q/" + latitude + "," + longitude + ".json";		
+	if (Titanium.Network.networkType != Titanium.Network.NETWORK.NONE){
 		var client = Ti.Network.createHTTPClient({    
 			onload: function(e){
 				var json = JSON.parse(this.responseText);
-				var weatherInfo = function(){
+				var weatherInfo = {
 					location: 	json.current_observation.display_location.full,
 					time: 		json.current_observation.local_time_rfc822,
 					temp: 		json.current_observation.temp_f,
@@ -27,21 +26,22 @@ var netCheck = function(latitude,longitude) {
 					visibility: json.current_observation.visibility_mi,
 					updateInfo: json.current_observation.observation_time,
 				};
+				client.open("GET", url);
+				client.send();
+				storage.saves(weatherInfo);
+			},
+			onerror: function(e) {
+				alert ("Unexpected error");
+			},
+			timeout: 5000
+		});
+		
 	} else {
-		alert ("Network is unavailable. Please check Settings.");	
-	}
-    	      	         
+		alert("No network connection found. Change Settings or tap OK to see most recent data.");	
+		Ti.API.info("No connection found");
+		var storage = require("storage");
+		storage.read();
+	}   	      	         
 };
-var storage = require("storage");
-storage.saves(weatherInfo);
 
-onerror: function(e) {
-	alert ("Unexpected error");
-
-timeout: 5000;
-	    
-client.open("GET", url);
-client.send();
-
-exports.weatherInfo = weatherInfo;
 exports.netCheck = netCheck;

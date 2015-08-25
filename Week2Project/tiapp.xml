@@ -4,10 +4,10 @@
     <name>Week2Project</name>
     <version>1.0</version>
     <publisher>aboynton</publisher>
-    <url>http://edu.fullsail.Week2Project</url>
+    <url>http://www.mysite.com</url>
     <description>undefined</description>
     <copyright>2015 by aboynton</copyright>
-    <icon>Screenshot_2014-09-13-10-40-55-1.png</icon>
+    <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
@@ -17,12 +17,10 @@
         <plist>
             <dict>
                 <key>NSLocationAlwaysUsageDescription</key>
-                <array>
-                    <string>Please allow the app to access your Location to find your Local Weather</string>
-                </array>
+                <string>This weather application needs your Location to gather current weather data.</string>
                 <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
-                	<string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortrait</string>
                 </array>
                 <key>UISupportedInterfaceOrientations~ipad</key>
                 <array>
