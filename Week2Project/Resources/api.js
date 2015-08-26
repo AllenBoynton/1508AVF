@@ -1,7 +1,8 @@
 // Function to check for network connectivity
 var netCheck = function(latitude, longitude){
-	var url = "http://api.wunderground.com/api/d2e13383813c88c5/conditions/alert/almanac/q/" + latitude + "," + longitude + ".json";		
 	if (Titanium.Network.networkType != Titanium.Network.NETWORK.NONE){
+		Ti.API.info("online");
+		var url = "http://api.wunderground.com/api/d2e13383813c88c5/conditions/alert/almanac/q/" + latitude + "," + longitude + ".json";		
 		var client = Ti.Network.createHTTPClient({    
 			onload: function(e){
 				var json = JSON.parse(this.responseText);

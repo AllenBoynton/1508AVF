@@ -1,5 +1,5 @@
 // Module to read function
-var read = function(){
+var read = function(weatherData){
 	var db = Ti.Database.open("weatherInfo");
 	db.execute("CREATE TABLE IF NOT EXISTS saveTBL (id INTEGER PRIMARY KEY, location TEXT, time TEXT, temp TEXT, highLow TEXT, tempLow TEXT, weather TEXT, feels TEXT, recordHigh TEXT, highYear TEXT, recordLow INTEGER, lowYear TEXT, wind TEXT, windDir TEXT, humidity TEXT, uv TEXT, dewPoint TEXT, pressure TEXT, visibility TEXT, updateInfo TEXT)");
 	var dbRows = db.execute("SELECT location, time, temp, highLow, tempLow, weather, feels, recordHigh, highYear, recordLow, lowYear, wind, windDir, humidity, uv, dewPoint, pressure, visibility, updateInfo FROM saveTBL");
@@ -33,7 +33,7 @@ var read = function(){
 };
 
 // Function saves data to database
-var saves = function(){
+var saves = function(weatherData){
 	var db = Ti.Database.open("weatherInfo");
 	db.execute("CREATE TABLE IF NOT EXISTS saveTBL (id INTEGER PRIMARY KEY, location TEXT, time TEXT, temp TEXT, highLow TEXT, tempLow TEXT, weather TEXT, feels TEXT, recordHigh TEXT, highYear TEXT, recordLow INTEGER, lowYear TEXT, wind TEXT, windDir TEXT, humidity TEXT, uv TEXT, dewPoint TEXT, pressure TEXT, visibility TEXT, updateInfo TEXT)");
 	db.execute("INSERT INTO saveTBL (location, time, temp, highLow, tempLow, weather, feels, recordHigh, highYear, recordLow, lowYear, wind, windDir, humidity, uv, dewPoint, pressure, visibility, updateInfo) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", weatherInfo.location, weatherInfo.time, weatherInfo.highLow, weatherInfo.weather, weatherInfo.feels, weatherInfo.recordHigh, weatherInfo.recordLow, weatherInfo.wind, weatherInfo.humidity, weatherInfo.uv, weatherInfo.dewPoint, weatherInfo.pressure, weatherInfo.visibility, weatherInfo.updateInfo);   
