@@ -1,0 +1,48 @@
+// Module to read function
+var read = function(){
+	var db = Ti.Database.open("geoBackup");
+	var dbResults = db.execute("Select * FROM saveTBL");
+	var rowCount = dbResults.rowCount;
+		while (dbResults.isValidRow()){
+			var weatherInfo = {
+				location:  	 dbResults.fieldByName ("location"),
+				time:  		 dbResults.fieldByName ("time"),
+				temp:		 dbResults.fieldByName ("temp"),
+				highLow: 	 dbResults.fieldByName ("highLow"),
+				tempLow:	 dbResults.fieldByName ("tempLow"),
+				weather: 	 dbResults.fieldByName ("weather"),
+				feels: 		 dbResults.fieldByName ("feels"),
+				recordHigh:	 dbResults.fieldByName ("recordHigh"),
+				highYear:	 dbResults.fieldByName ("highYear"),
+				recordLow: 	 dbResults.fieldByName ("recordLow"),
+				lowYear:	 dbResults.fieldByName ("lowYear"),
+				wind: 		 dbResults.fieldByName ("wind"),
+				windDir:	 dbResults.fieldByName ("windDir"),
+				humidity: 	 dbResults.fieldByName ("humidity"),
+				uv:			 dbResults.fieldByName ("uv"),
+				dewPoint: 	 dbResults.fieldByName ("dewPoint"),
+				pressure: 	 dbResults.fieldByName ("pressure"),
+				visibility:	 dbResults.fieldByName ("visibility"),
+				updateInfo:	 dbResults.fieldByName ("updateInfo"),
+		};
+		dbResults.next();
+	}
+	dbResults.close();
+	db.close();
+	var ui = require("ui");
+	ui.addText(weatherInfo);
+};
+// Function saves data to database
+var saves = function(e){
+	var db = Ti.Database.open("weatherInfo");
+	db.execute("CREATE TABLE IF NOT EXISTS saveTBL (id INTEGER PRIMARY KEY, location TEXT, time TEXT, temp TEXT, highLow TEXT, tempLow TEXT, weather TEXT, feels TEXT, recordHigh TEXT, highYear TEXT, recordLow INTEGER, lowYear TEXT, wind TEXT, windDir TEXT, humidity TEXT, uv TEXT, dewPoint TEXT, pressure TEXT, visibility TEXT, updateInfo TEXT)");
+	db.execute("DELETE FROM saveTBL");
+	db.execute("INSERT INTO saveTBL (location, time, temp, highLow, tempLow, weather, feels, recordHigh, highYear, recordLow, lowYear, wind, windDir, humidity, uv, dewPoint, pressure, visibility, updateInfo) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", weather.location, weather.time, weather.highLow, weather.weather, weather.feels, weather.recordHigh, weather.recordLow, weather.wind, weather.humidity, weather.uv, weather.dewPoint, weather.pressure, weather.visibility, weather.updateInfo);   
+    db.rowID = db.lastInsertRowID;
+    var rowCount = db.rowCount;
+    db.close();
+    read();
+};
+// Exports
+exports.saves = saves;
+exports.read = read;
