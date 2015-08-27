@@ -1,0 +1,638 @@
+
+Thu Aug 27 2015 14:37:51 GMT-0400 (EDT)
+
+Operating System
+  Name                        = Mac OS X
+  Version                     = 10.10.5
+  Architecture                = 64bit
+  # CPUs                      = 8
+  Memory                      = 8589934592
+
+Node.js
+  Node.js Version             = 0.10.13
+  npm Version                 = 1.3.2
+
+Titanium CLI
+  CLI Version                 = 4.0.1
+
+Titanium SDK
+  SDK Version                 = 4.1.0.GA
+  SDK Path                    = /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA
+  Target Platform             = android
+
+Command
+  /usr/local/bin/node /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform android --log-level trace --sdk 4.1.0.GA --project-dir /Users/aboynton/Desktop/AVF1508/Week3Project --target emulator --android-sdk /Users/aboynton/Library/Android/sdk --device-id Samsung Galaxy Note 3 - 4.4.4 --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49612 --plugin-paths /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules --config-file /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/build-1440700666209.json --no-banner
+
+[DEBUG]  Detecting modules in /Users/aboynton/Library/Application Support/Titanium/modules
+[DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected android module: facebook 3.0.2 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/facebook/3.0.2
+[DEBUG]  Detected android module: facebook 3.0.3 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/facebook/3.0.3
+[DEBUG]  Detected android module: facebook 4.0.5 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/facebook/4.0.5
+[DEBUG]  Detected android module: ti.cloudpush 3.3.0 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.0
+[DEBUG]  Detected android module: ti.cloudpush 3.3.4 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.4
+[DEBUG]  Detected android module: ti.cloudpush 3.3.7 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.7
+[DEBUG]  Detected android module: ti.cloudpush 3.3.8 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.8
+[DEBUG]  Detected android module: ti.map 2.1.4 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/ti.map/2.1.4
+[DEBUG]  Detected android module: ti.map 2.2.2 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/ti.map/2.2.2
+[DEBUG]  Detected android module: ti.map 2.2.3 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/ti.map/2.2.3
+[DEBUG]  Detected android module: ti.map 2.3.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/ti.map/2.3.1
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.5 @ /Users/aboynton/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.5
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.7 @ /Users/aboynton/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.7
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.9 @ /Users/aboynton/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9
+[DEBUG]  Detected iphone module: com.appcelerator.apm 1.1.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.0.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.0.1
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.1.0 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.1.0
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.1.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.1.1
+[DEBUG]  Detected iphone module: facebook 3.1.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/facebook/3.1.1
+[DEBUG]  Detected iphone module: facebook 3.2.0 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/facebook/3.2.0
+[DEBUG]  Detected iphone module: facebook 4.0.5 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/facebook/4.0.5
+[DEBUG]  Detected iphone module: ti.coremotion 1.0.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/ti.coremotion/1.0.1
+[DEBUG]  Detected iphone module: ti.coremotion 1.1.0 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/ti.coremotion/1.1.0
+[DEBUG]  Detected iphone module: ti.map 2.0.4 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/ti.map/2.0.4
+[DEBUG]  Detected iphone module: ti.map 2.2.0 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/ti.map/2.2.0
+[DEBUG]  Detected iphone module: ti.map 2.3.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/ti.map/2.3.1
+[DEBUG]  Detected iphone module: ti.touchid 1.0 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.0
+[DEBUG]  Detected iphone module: ti.touchid 1.1.0 @ /Users/aboynton/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.1.0
+[DEBUG]  Looking for Titanium module id=ti.cloud version=latest platform=commonjs deploy-type=development
+[INFO]   Found Titanium module id=ti.cloud version=3.2.9 platform=commonjs deploy-type=development path=/Users/aboynton/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9
+[DEBUG]  No project level plugins to load
+[DEBUG]  Titanium SDK Android directory: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android
+[INFO]   Deploy type: development
+[INFO]   Building for target: emulator
+[INFO]   Building for emulator: Samsung Galaxy Note 3 - 4.4.4
+[INFO]   Targeting Android SDK: 22
+[INFO]   Building for the following architectures: armeabi, armeabi-v7a, x86
+[INFO]   Signing with keystore: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/dev_keystore (tidev)
+[DEBUG]  App ID: edu.fullsail.Week3Project
+[DEBUG]  Classname: Week3project
+[INFO]   Debugging disabled
+[INFO]   Profiler disabled
+[INFO]   Forcing rebuild: /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/build-manifest.json does not exist
+[INFO]   Launching emulator: Samsung Galaxy Note 3 - 4.4.4
+[TRACE]  Starting emulator: Samsung Galaxy Note 3 - 4.4.4
+[TRACE]  Checking if emulator Samsung Galaxy Note 3 - 4.4.4 is running...
+[TRACE]  Detecting if Samsung Galaxy Note 3 - 4.4.4 exists...
+[TRACE]  Found 3 emulators
+[TRACE]  Emulator exists, detecting all running emulators and connected devices...
+[TRACE]  Detected 0 running emulators and connected devices
+[TRACE]  Emulator not running, detecting running emulators
+[TRACE]  Found 3 emulators
+[TRACE]  Starting the emulator...
+[INFO]   Running: /Applications/Genymotion.app/Contents/MacOS/player --vm-name "Samsung Galaxy Note 3 - 4.4.4"
+[TRACE]  Emulator is starting, monitoring boot state...
+[TRACE]  Checking the boot state for the next 240000 ms
+[TRACE]  Waiting for emulator to register with ADB
+[TRACE]  Emulator process started
+[TRACE]  offline build file /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/build-acb57de62ee9cdedb19f8f3cc2310bafdff0f658.json
+[TRACE]  No devices found, continuing to wait
+[TRACE]  online 1
+[TRACE]  optimizing build, last build was 228.091 sec ago
+[DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/.DS_Store
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/KS_nav_ui.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/KS_nav_ui.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/KS_nav_views.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/KS_nav_views.png
+[DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/yelp_logo.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/images/yelp_logo.png
+[DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/sounds/Engine_revving.wav => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/sounds/Engine_revving.wav
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/appicon.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/appicon.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-long-land-hdpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-long-land-hdpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-long-land-ldpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-long-land-ldpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-long-port-hdpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-long-port-hdpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-long-port-ldpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-long-port-ldpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-notlong-land-hdpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-notlong-land-hdpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-notlong-land-ldpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-notlong-land-ldpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-notlong-land-mdpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-notlong-land-mdpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-notlong-port-hdpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-notlong-port-hdpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-notlong-port-ldpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-notlong-port-ldpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android/images/res-notlong-port-mdpi/default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/appicon.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/drawable/appicon.png
+[INFO]   Processing JavaScript files
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/api.js => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/api.js
+[DEBUG]  Symlinking /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/liveview.js => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/app.js
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/arrowDB.js => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/arrowDB.js
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/data.js => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/data.js
+[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/ui.js => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/ui.js
+[DEBUG]  Symlinking /Users/aboynton/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9/ti.cloud.js => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/Resources/ti.cloud.js
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-v8.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-analytics.jar
+[DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/aps-analytics.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-android.jar
+[DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/jaxen-1.1.1.jar
+[DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/ti-commons-codec-1.3.jar
+[DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-common.jar
+[DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/titanium.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-app.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-ui.jar
+[DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/nineoldandroids-appc-2.4.0.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-filesystem.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-media.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-appcompat.jar
+[DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v4.jar
+[DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v7-appcompat.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-locale.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-network.jar
+[DEBUG]  Adding dependency library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/thirdparty.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-xml.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-utils.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-geolocation.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-accelerometer.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-contacts.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-map.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-calendar.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-gesture.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-platform.jar
+[DEBUG]  Adding library /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-database.jar
+[DEBUG]  Unknown namespace stream, skipping
+[DEBUG]  Unknown namespace api, skipping
+[DEBUG]  Unknown namespace app.deploytype, skipping
+[DEBUG]  Unknown namespace ui.ios, skipping
+[INFO]   Writing /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets/app.json
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-analytics.res.zip
+[DEBUG]  Copying /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-zaep1q/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-android.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-rbrmgo/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-app.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-1cyrron/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-filesystem.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-dx70jq/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-media.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-1t70790/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-locale.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-ys851l/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-network.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-rykszv/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-xml.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-147ktsv/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-utils.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-1k3f672/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-geolocation.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-73fujh/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-accelerometer.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-u7gl3o/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-contacts.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-7v1q6y/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-map.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-fjng0r/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-calendar.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-4ei1of/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-gesture.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-g0527c/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-platform.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-urxbi2/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-database.res.zip
+[DEBUG]  Merging /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-2uutnl/res/values/strings.xml => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[DEBUG]  Copying template /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/AppInfo.java => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/gen/edu/fullsail/Week3Project/Week3projectAppInfo.java
+[DEBUG]  Copying template /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/App.java => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/gen/edu/fullsail/Week3Project/Week3projectApplication.java
+[DEBUG]  Copying template /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/Activity.java => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/gen/edu/fullsail/Week3Project/Week3projectActivity.java
+[DEBUG]  Copying template /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/project => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/.project
+[DEBUG]  Copying template /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/default.properties => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/default.properties
+[DEBUG]  Copying /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/gitignore => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/.gitignore
+[DEBUG]  Copying /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/templates/build/classpath => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/.classpath
+[INFO]   No aidl files to compile, continuing
+[INFO]   Generating i18n files
+[DEBUG]  Merging en strings => /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/strings.xml
+[INFO]   Generating /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res/values/theme.xml
+[INFO]   Packaging application: /Users/aboynton/Library/Android/sdk/build-tools/21.1.2/aapt "package" "-f" "-m" "-J" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/gen" "-M" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/AndroidManifest.xml" "-A" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/assets" "-S" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/res" "-I" "/Users/aboynton/Library/Android/sdk/platforms/android-22/android.jar" "-F" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/app.ap_" "--auto-add-overlay" "--extra-packages" "ti.modules.titanium.ui:android.support.v7.appcompat" "-S" "/var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-1w9m24h/res" "-S" "/var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/115727-4155-18yugfj/res"
+[INFO]   Building Java source files: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/javac "-J-Xmx256M" "-encoding" "utf8" "-bootclasspath" "/Users/aboynton/Library/Android/sdk/platforms/android-22/android.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-v8.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-analytics.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/aps-analytics.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-android.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/jaxen-1.1.1.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/ti-commons-codec-1.3.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-common.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/titanium.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-app.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-ui.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/nineoldandroids-appc-2.4.0.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-filesystem.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-media.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-appcompat.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v4.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v7-appcompat.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-locale.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-network.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/thirdparty.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-xml.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-utils.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-geolocation.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-accelerometer.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-contacts.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-map.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-calendar.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-gesture.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-platform.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-database.jar:/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/lib/titanium-verify.jar:R.class:ApplicationStylesheet.class:Week3projectActivity.class:Week3projectAppInfo.class:Week3projectApplication.class" "-d" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/classes" "-proc:none" "-target" "1.6" "-source" "1.6" "@/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/java-sources.txt"
+[INFO]   Running dexer: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/java "-Xmx1024M" "-XX:-UseGCOverheadLimit" "-Djava.ext.dirs=/Users/aboynton/Library/Android/sdk/platform-tools" "-jar" "/Users/aboynton/Library/Android/sdk/build-tools/21.1.2/lib/dx.jar" "--dex" "--output=/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/classes.dex" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/classes" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/lib/titanium-verify.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-v8.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-analytics.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/aps-analytics.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-android.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/jaxen-1.1.1.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/ti-commons-codec-1.3.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-common.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/titanium.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-app.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-ui.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/nineoldandroids-appc-2.4.0.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-filesystem.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-media.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-appcompat.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v4.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v7-appcompat.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-locale.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-network.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/thirdparty.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-xml.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-utils.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-geolocation.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-accelerometer.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-contacts.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-map.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-calendar.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-gesture.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-platform.jar" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-database.jar"
+[TRACE]  Found 1 devices, checking if any of them are the emulator...
+[TRACE]  Emulator is running!
+[TRACE]  Checking if boot animation has finished...
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is booted, emitting booted event
+[INFO]   Emulator is booted
+[INFO]   SD card not required, skipping mount check
+[INFO]   Emulator ready!
+[INFO]   Creating unsigned apk
+[DEBUG]  Processing /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/app.ap_
+[DEBUG]  Deflating AndroidManifest.xml
+[DEBUG]  Adding assets/Resources/KS_nav_ui.png
+[DEBUG]  Adding assets/Resources/KS_nav_views.png
+[DEBUG]  Deflating assets/Resources/_app_props_.json
+[DEBUG]  Deflating assets/Resources/api.js
+[DEBUG]  Deflating assets/Resources/app.js
+[DEBUG]  Adding assets/Resources/appicon.png
+[DEBUG]  Deflating assets/Resources/arrowDB.js
+[DEBUG]  Deflating assets/Resources/data.js
+[DEBUG]  Adding assets/Resources/images/yelp_logo.png
+[DEBUG]  Adding assets/Resources/sounds/Engine_revving.wav
+[DEBUG]  Deflating assets/Resources/ti.cloud.js
+[DEBUG]  Deflating assets/Resources/ui.js
+[DEBUG]  Deflating assets/app.json
+[DEBUG]  Deflating assets/index.json
+[DEBUG]  Deflating res/anim/abc_fade_in.xml
+[DEBUG]  Deflating res/anim/abc_fade_out.xml
+[DEBUG]  Deflating res/anim/abc_grow_fade_in_from_bottom.xml
+[DEBUG]  Deflating res/anim/abc_popup_enter.xml
+[DEBUG]  Deflating res/anim/abc_popup_exit.xml
+[DEBUG]  Deflating res/anim/abc_shrink_fade_out_from_bottom.xml
+[DEBUG]  Deflating res/anim/abc_slide_in_bottom.xml
+[DEBUG]  Deflating res/anim/abc_slide_in_top.xml
+[DEBUG]  Deflating res/anim/abc_slide_out_bottom.xml
+[DEBUG]  Deflating res/anim/abc_slide_out_top.xml
+[DEBUG]  Deflating res/color-v11/abc_background_cache_hint_selector_material_dark.xml
+[DEBUG]  Deflating res/color-v11/abc_background_cache_hint_selector_material_light.xml
+[DEBUG]  Deflating res/color/abc_background_cache_hint_selector_material_dark.xml
+[DEBUG]  Deflating res/color/abc_background_cache_hint_selector_material_light.xml
+[DEBUG]  Deflating res/color/abc_primary_text_disable_only_material_dark.xml
+[DEBUG]  Deflating res/color/abc_primary_text_disable_only_material_light.xml
+[DEBUG]  Deflating res/color/abc_primary_text_material_dark.xml
+[DEBUG]  Deflating res/color/abc_primary_text_material_light.xml
+[DEBUG]  Deflating res/color/abc_search_url_text.xml
+[DEBUG]  Deflating res/color/abc_secondary_text_material_dark.xml
+[DEBUG]  Deflating res/color/abc_secondary_text_material_light.xml
+[DEBUG]  Deflating res/color/switch_thumb_material_dark.xml
+[DEBUG]  Deflating res/color/switch_thumb_material_light.xml
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_focused_holo.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_text_cursor_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-mdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-xhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-xxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-xxxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-long-land-hdpi-v4/background.png
+[DEBUG]  Adding res/drawable-long-land-ldpi-v4/background.png
+[DEBUG]  Adding res/drawable-long-port-hdpi-v4/background.png
+[DEBUG]  Adding res/drawable-long-port-ldpi-v4/background.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_focused_holo.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_text_cursor_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-notlong-land-hdpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-land-ldpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-land-mdpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-port-hdpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-port-ldpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-port-mdpi-v4/background.png
+[DEBUG]  Adding res/drawable-tvdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-tvdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_focused_holo.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_text_cursor_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_text_cursor_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Deflating res/drawable/abc_btn_borderless_material.xml
+[DEBUG]  Deflating res/drawable/abc_btn_check_material.xml
+[DEBUG]  Deflating res/drawable/abc_btn_default_mtrl_shape.xml
+[DEBUG]  Deflating res/drawable/abc_btn_radio_material.xml
+[DEBUG]  Deflating res/drawable/abc_cab_background_internal_bg.xml
+[DEBUG]  Deflating res/drawable/abc_cab_background_top_material.xml
+[DEBUG]  Deflating res/drawable/abc_dialog_material_background_dark.xml
+[DEBUG]  Deflating res/drawable/abc_dialog_material_background_light.xml
+[DEBUG]  Deflating res/drawable/abc_edit_text_material.xml
+[DEBUG]  Deflating res/drawable/abc_item_background_holo_dark.xml
+[DEBUG]  Deflating res/drawable/abc_item_background_holo_light.xml
+[DEBUG]  Deflating res/drawable/abc_list_selector_background_transition_holo_dark.xml
+[DEBUG]  Deflating res/drawable/abc_list_selector_background_transition_holo_light.xml
+[DEBUG]  Deflating res/drawable/abc_list_selector_holo_dark.xml
+[DEBUG]  Deflating res/drawable/abc_list_selector_holo_light.xml
+[DEBUG]  Deflating res/drawable/abc_ratingbar_full_material.xml
+[DEBUG]  Deflating res/drawable/abc_spinner_textfield_background_material.xml
+[DEBUG]  Deflating res/drawable/abc_switch_thumb_material.xml
+[DEBUG]  Deflating res/drawable/abc_tab_indicator_material.xml
+[DEBUG]  Deflating res/drawable/abc_textfield_search_material.xml
+[DEBUG]  Adding res/drawable/appicon.png
+[DEBUG]  Adding res/drawable/background.png
+[DEBUG]  Adding res/drawable/btn_check_buttonless_on_64.png
+[DEBUG]  Adding res/drawable/btn_more_64.png
+[DEBUG]  Adding res/drawable/disclosure_64.png
+[DEBUG]  Deflating res/layout-v11/abc_screen_content_include.xml
+[DEBUG]  Deflating res/layout-v21/abc_screen_toolbar.xml
+[DEBUG]  Deflating res/layout/abc_action_bar_title_item.xml
+[DEBUG]  Deflating res/layout/abc_action_bar_up_container.xml
+[DEBUG]  Deflating res/layout/abc_action_bar_view_list_nav_layout.xml
+[DEBUG]  Deflating res/layout/abc_action_menu_item_layout.xml
+[DEBUG]  Deflating res/layout/abc_action_menu_layout.xml
+[DEBUG]  Deflating res/layout/abc_action_mode_bar.xml
+[DEBUG]  Deflating res/layout/abc_action_mode_close_item_material.xml
+[DEBUG]  Deflating res/layout/abc_activity_chooser_view.xml
+[DEBUG]  Deflating res/layout/abc_activity_chooser_view_list_item.xml
+[DEBUG]  Deflating res/layout/abc_alert_dialog_material.xml
+[DEBUG]  Deflating res/layout/abc_dialog_title_material.xml
+[DEBUG]  Deflating res/layout/abc_expanded_menu_layout.xml
+[DEBUG]  Deflating res/layout/abc_list_menu_item_checkbox.xml
+[DEBUG]  Deflating res/layout/abc_list_menu_item_icon.xml
+[DEBUG]  Deflating res/layout/abc_list_menu_item_layout.xml
+[DEBUG]  Deflating res/layout/abc_list_menu_item_radio.xml
+[DEBUG]  Deflating res/layout/abc_popup_menu_item_layout.xml
+[DEBUG]  Deflating res/layout/abc_screen_content_include.xml
+[DEBUG]  Deflating res/layout/abc_screen_simple.xml
+[DEBUG]  Deflating res/layout/abc_screen_simple_overlay_action_mode.xml
+[DEBUG]  Deflating res/layout/abc_screen_toolbar.xml
+[DEBUG]  Deflating res/layout/abc_search_dropdown_item_icons_2line.xml
+[DEBUG]  Deflating res/layout/abc_search_view.xml
+[DEBUG]  Deflating res/layout/abc_select_dialog_material.xml
+[DEBUG]  Deflating res/layout/abc_simple_dropdown_hint.xml
+[DEBUG]  Deflating res/layout/select_dialog_item_material.xml
+[DEBUG]  Deflating res/layout/select_dialog_multichoice_material.xml
+[DEBUG]  Deflating res/layout/select_dialog_singlechoice_material.xml
+[DEBUG]  Deflating res/layout/support_simple_spinner_dropdown_item.xml
+[DEBUG]  Deflating res/layout/titanium_tabgroup.xml
+[DEBUG]  Deflating res/layout/titanium_ui_checkbox.xml
+[DEBUG]  Deflating res/layout/titanium_ui_edittext.xml
+[DEBUG]  Deflating res/layout/titanium_ui_list_header_or_footer.xml
+[DEBUG]  Deflating res/layout/titanium_ui_list_item.xml
+[DEBUG]  Deflating res/layout/titanium_ui_spinner.xml
+[DEBUG]  Deflating res/layout/titanium_ui_switchcompat.xml
+[DEBUG]  Deflating resources.arsc
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-v8.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-analytics.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/aps-analytics.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-android.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/jaxen-1.1.1.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/ti-commons-codec-1.3.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/kroll-common.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/titanium.jar
+[DEBUG]  Deflating org/appcelerator/titanium/build.properties
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/background.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_100.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_64.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more_100.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more_64.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-app.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-ui.jar
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/nineoldandroids-appc-2.4.0.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-filesystem.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-media.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-appcompat.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v4.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/android-support-v7-appcompat.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-locale.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-network.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/thirdparty.jar
+[DEBUG]  Deflating org/apache/Commons-NOTICE.txt
+[DEBUG]  Deflating org/apache/HttpComponents-NOTICE.txt
+[DEBUG]  Deflating org/apache/mime4j-NOTICE.txt
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-xml.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-utils.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-geolocation.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-accelerometer.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-contacts.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-map.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-calendar.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-gesture.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-platform.jar
+[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/modules/titanium-database.jar
+[DEBUG]  Adding classes.dex
+[INFO]   Processing /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/src
+[DEBUG]  Adding lib/armeabi/libkroll-v8.so
+[DEBUG]  Adding lib/armeabi/libstlport_shared.so
+[DEBUG]  Adding lib/armeabi/libtiverify.so
+[DEBUG]  Adding lib/armeabi-v7a/libkroll-v8.so
+[DEBUG]  Adding lib/armeabi-v7a/libstlport_shared.so
+[DEBUG]  Adding lib/armeabi-v7a/libtiverify.so
+[DEBUG]  Adding lib/x86/libkroll-v8.so
+[DEBUG]  Adding lib/x86/libstlport_shared.so
+[DEBUG]  Adding lib/x86/libtiverify.so
+[INFO]   Writing unsigned apk: /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/app-unsigned.apk
+[INFO]   Using MD5withRSA signature algorithm
+[INFO]   Signing apk: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/jarsigner "-sigalg" "MD5withRSA" "-digestalg" "SHA1" "-keystore" "/Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/android/dev_keystore" "-storepass" "*******" "-signedjar" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/Week3Project.apk" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/app-unsigned.apk" "tidev"
+[INFO]   Aligning zip file: /Users/aboynton/Library/Android/sdk/build-tools/21.1.2/zipalign "-v" "4" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/Week3Project.apk" "/Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/Week3Project.apkz"
+[INFO]   Writing build manifest: /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/build-manifest.json
+[INFO]   Making sure the adb server is running
+[INFO]   Installing apk: /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/Week3Project.apk
+[TRACE]  Checking if package manager service is started
+[TRACE]  Package manager has started
+[TRACE]  Executing: /Users/aboynton/Library/Android/sdk/platform-tools/adb -s 192.168.56.101:5555 install -r /Users/aboynton/Desktop/AVF1508/Week3Project/build/android/bin/Week3Project.apk
+[INFO]   App successfully installed
+[INFO]   Starting app: edu.fullsail.Week3Project/.Week3projectActivity
+[DEBUG]  Trying to start the app...
+[INFO]   Application pid: 1335
+-- Start application log -----------------------------------------------------
+[INFO]   TiApplication: (main) [0,0] checkpoint, app created.
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 169K, 12%% free 3807K/4284K, paused 0ms+0ms, total 2ms
+[DEBUG]  dalvikvm: WAIT_FOR_CONCURRENT_GC blocked 1ms
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 357K, 15%% free 3895K/4552K, paused 0ms+2ms, total 3ms
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 214K, 11%% free 4149K/4660K, paused 0ms+0ms, total 2ms
+[INFO]   TiApplication: (main) [33,33] Titanium 4.1.0 (2015/07/06 11:15 d57aa7d)
+[INFO]   DatabaseHelper: No value in database for platform key: 'unique_machine_id' returning supplied default ''
+[INFO]   DatabaseHelper: No value in database for platform key: 'hardware_machine_id' returning supplied default ''
+[DEBUG]  dalvikvm: Trying to load lib /data/app-lib/edu.fullsail.Week3Project-1/libstlport_shared.so 0xa50d4220
+[INFO]   TiApplication: (main) [77,110] Titanium Javascript runtime: v8
+[DEBUG]  dalvikvm: Added shared lib /data/app-lib/edu.fullsail.Week3Project-1/libstlport_shared.so 0xa50d4220
+[DEBUG]  dalvikvm: No JNI_OnLoad found in /data/app-lib/edu.fullsail.Week3Project-1/libstlport_shared.so 0xa50d4220, skipping init
+[DEBUG]  dalvikvm: Trying to load lib /data/app-lib/edu.fullsail.Week3Project-1/libkroll-v8.so 0xa50d4220
+[DEBUG]  dalvikvm: Added shared lib /data/app-lib/edu.fullsail.Week3Project-1/libkroll-v8.so 0xa50d4220
+[INFO]   TiRootActivity: (main) [0,0] checkpoint, on root activity create, savedInstanceState: null
+[ERROR]  E/        : UID 10061 asks for /proc/cpuinfo
+[ERROR]  E/        : Unable to open file /data/data/.appwithABI2
+[ERROR]  E/        : Unable to open file /data/data/.appwithABI2neon
+[ERROR]  E/        : UID 10061 is not in ARM UID list files
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 375K, 14%% free 4216K/4888K, paused 0ms+1ms, total 4ms
+[DEBUG]  APSAnalyticsModel: Creating Database appcAnalytics.db
+[WARN]   V8Object: (KrollRuntimeThread) [27,27] Runtime disposed, cannot set property 'userAgent'
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 119K, 12%% free 4322K/4888K, paused 4ms, total 4ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 4.841MB for 349068-byte allocation
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 4K, 11%% free 4659K/5232K, paused 3ms, total 3ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 11K, 12%% free 4648K/5232K, paused 4ms, total 4ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 5.160MB for 349068-byte allocation
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 11%% free 4989K/5576K, paused 3ms, total 3ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 11%% free 4990K/5576K, paused 3ms, total 3ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 5.494MB for 349068-byte allocation
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 10%% free 5330K/5920K, paused 1ms, total 1ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 10%% free 5331K/5920K, paused 4ms, total 4ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 5.827MB for 349068-byte allocation
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 10%% free 5672K/6264K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 9%% free 6014K/6608K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 9%% free 6355K/6952K, paused 6ms, total 6ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 9%% free 6696K/7296K, paused 2ms, total 2ms
+[INFO]   Project built successfully in 30s 72ms

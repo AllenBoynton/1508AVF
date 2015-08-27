@@ -1,0 +1,26 @@
+// app launches
+// check for network
+// authenticate our app with ArrowDB
+// grab api data (create custom data object)
+// save custom data object locally
+// save custom data object cloud
+// read local data (create custom data object)
+// populate UI from custom data object
+
+var win = Ti.UIcreateWindow({
+	backgroundColor: "black"
+});
+
+var player = Ti.Media.createSound("sound/Engine_revving.wav");
+player.play();
+
+if(Ti.Network.online){
+	var arrowDB = require("arrowDB");
+	arrowDB.auth();
+} else {
+	alert("Please verify Network settings");
+	var data = require("data");
+	data.read();
+};
+
+win.add

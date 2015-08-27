@@ -17,7 +17,7 @@ var authenticate = function(){
 	});
 };
 
-// var save = function(dbArray){
+var save = function(dbArray){
 
 exports.authenticate = authenticate;
-// exports.save = save;
+exports.save = save;
