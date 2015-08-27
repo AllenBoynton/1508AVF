@@ -4,18 +4,20 @@
     <name>Week3Project</name>
     <version>1.0</version>
     <publisher>aboynton</publisher>
-    <url>http://</url>
-    <description/>
+    <url>edu.fullsail.Week3Project</url>
+    <description>undefined</description>
     <copyright>2015 by aboynton</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
-    <navbar-hidden>false</navbar-hidden>
+    <navbar-hidden>true</navbar-hidden>
     <analytics>true</analytics>
     <guid>a81ed37c-8671-4bde-9444-00160327f4d2</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>
             <dict>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>This Utility application needs your Location to gather data.</string>
                 <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
                     <string>UIInterfaceOrientationPortrait</string>

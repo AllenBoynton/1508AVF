@@ -1,9 +1,9 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1440548306164
+LAST_LAUNCH_TIMESTAMP=1440636536601
 Week1Project\:launchMode=run
 Week1Project\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.run.device.launchShortcut.7ed9d992b26e0010d4bee7686ba6b7e30224852b
 Week2Project\:launchMode=run
-Week2Project\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.run.device.launchShortcut.7ed9d992b26e0010d4bee7686ba6b7e30224852b
+Week2Project\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.D4CB615D-7DCA-43DE-A315-B4061F5ED34B
 Week3Project\:launchMode=run
 Week3Project\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.EB4D1FA2-4126-446C-B7B2-B7C2E495BAF1
 androidTest\:launchMode=run
