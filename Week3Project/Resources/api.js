@@ -1,7 +1,7 @@
 // Module with function to check network
 var data = require("data");
 
-var network = function(latitude, longitude){
+var getData = function(){
 	var url = "http://api.edmunds.com/api/dealer/v2/repairshops/?zipcode=29607&radius=100&pageNum=1&pageSize=10&sortby=distance:ASC&view=basic&callback=repairShops&api_key=a69s88jdn9qtfdyufxr9mch9";
 	if(Ti.Network.online){
 		var client = Ti.Network.createHTTPClient({
@@ -13,12 +13,12 @@ var network = function(latitude, longitude){
 				
 				for(i=0, j=repairShops.length; i<j; i++){
 					var repairShop = {
-						name: repairShops[i].name,
-						address: repairShops[i].address,
+						name: 	  repairShops[i].name,
+						address:  repairShops[i].address,
 						distance: repairShops[i].distance,
-						make: repairShops[i].make.name,
-						repairs: repairShops[i].type,
-						hours: repairShops[i].operations,
+						make: 	  repairShops[i].make.name,
+						repairs:  repairShops[i].type,
+						hours: 	  repairShops[i].operations,
 					};
 					shopArray.push(repairShop);
 				}
@@ -37,4 +37,4 @@ var network = function(latitude, longitude){
 };
 
 // Export network function
-exports.network = network;
+exports.getData = getData;

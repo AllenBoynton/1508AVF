@@ -18,27 +18,3 @@ if(Ti.Network.online){
 	var data = require("data");
 	data.read();
 };
-/*
-} else {
-	Ti.Network.eventListener("change", function(){
-		if(Ti.Network.online){
-			alert("Please verify Network settings");
-			var data = require("data");
-			data.read();
-		};
-	});
-};
-
-win.addEventListener("open", function(){
-	var sound = Ti.Media.createSound({
-	url: "Engine_revving.wav",
-	preload: true,
-	volume: 0.1,
-	allowBackground: true
-	});
-	sound.play();
-});
-
-// win.add(sound);
-win.open();
-*/

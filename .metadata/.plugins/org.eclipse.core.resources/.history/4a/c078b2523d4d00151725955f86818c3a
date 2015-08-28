@@ -1,0 +1,115 @@
+// User Interface module and text with json data display
+var api = require("api");
+
+var win = Ti.UI.createWindow({
+	backgroundColor: "gray",
+	title: "Car-U-Repair-It",
+	top: 20,
+	color: "yellow",	
+	layout: "vertical"
+});
+
+win.addEventListener("open", function(){
+	var sound = Ti.Media.createSound({
+		url: "sounds/Engine_revving.wav",
+		volume: 0.2
+	});
+	sound.play();
+});
+
+var bg = Ti.UI.createView({
+	backgroundImage: "images/skidmarks.jpg",
+	height: "100%",
+	width: "100%"
+});
+
+var nameView = Ti.UI.createView({
+	backgroundColor: "gray",
+	opacity: .7,
+	top: 15,
+	height: 50,
+	left: 25,
+	right: 25
+});
+var infoView = Ti.UI.createView({
+	backgroundColor: "gray",
+	opacity: .7,
+	top: nameView.top + nameView.height + 30,
+	height: 400,
+	left: 25,
+	right: 25
+});
+
+var hoursView = Ti.UI.createView({
+	backgroundColor: "gray",
+	opacity: .7,
+	top: infoView.top + infoView.height + 40,
+	height: 150,
+	left: 25,
+	right: 25
+});
+	
+var name = Ti.UI.createLabel(/*labelFormat*/{
+	color: "black", 
+	top: 8,
+	text: "name",
+	textAlign: "center",
+	font: {fontSize: 28, fontWeight: "bold"}
+});	
+
+var address = Ti.UI.createLabel(/*labelFormat*/{
+	color: "black", 
+	top: 20,
+	text: "address"
+});	
+
+var distance = Ti.UI.createLabel(/*labelFormat*/{
+	color: "black", 
+	top: 120,
+	text: "distance"
+});	
+
+var make = Ti.UI.createLabel(/*labelFormat*/{
+	color: "black", 
+	top: 180,
+	text: "make"
+});	
+
+var repairs = Ti.UI.createLabel(/*labelFormat*/{
+	color: "black", 
+	top: make.top + make.height + 30,
+	text: "repairs"
+});	
+
+var hours = Ti.UI.createLabel(/*labelFormat*/{
+	color: "black", 
+	top: hoursView.top + 20,
+	left: 20,
+	text: "hours"
+});	
+
+// Function to display the data on the UI
+var addText = function(dataBackup){
+		name.text 	  = dataBackup.name;
+		address.text  = dataBackup.address;
+		distance.text = "Distance from here: " + dataBackup.distance + " mi";
+		make.text 	  = "We specialize in repairs of mostly " + dataBackup.make + "s. \n but repair most all foreign and domestic.";
+		repairs.text  = "Type of work performed as a " + dataBackup.repairs + ".";
+		hours.text 	  = "Hours of Operation: " + dataBackup.hours;	
+};
+
+// Main code
+win.add(bg);
+bg.add(nameView);
+bg.add(infoView);
+bg.add(hoursView);
+nameView.add(name);
+infoView.add(address);
+infoView.add(distance);
+infoView.add(make);
+infoView.add(repairs);
+hoursView.add(hours);
+win.open();
+
+// Export addText function
+exports.addtext = addText;

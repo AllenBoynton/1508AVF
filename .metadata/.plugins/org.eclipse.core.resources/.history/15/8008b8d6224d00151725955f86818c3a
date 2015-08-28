@@ -1,0 +1,28 @@
+//
+var win = Ti.UI.createWindow({
+	backgroundColor: "#000",
+	layout: "vertical"
+});
+
+// Function to display the data on the UI
+var addText = function(dataBackup){
+		name.text 	  = dataBackup.name;
+		address.text  = dataBackup.address;
+		distance.text = "Distance from here: " + dataBackup.distance + " mi";
+		make.text 	  = "We specialize in repairs of mostly " + dataBackup.make + "s. \n but repair most all foreign and domestic.";
+		repairs.text  = "Type of work performed as a " + dataBackup.repairs + ".";
+		hours.text 	  = "Hours of Operation: " + dataBackup.hours;	
+};
+
+// Main code
+win.add(bg);
+bg.add(name);
+bg.add(address);
+bg.add(distance);
+bg.add(make);
+bg.add(repairs);
+bg.add(hours);
+win.open();
+
+// Export addText function
+exports.addtext = addText;
