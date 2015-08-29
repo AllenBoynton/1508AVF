@@ -17,8 +17,8 @@ var authenticate = function(){
 	});
 };
 
-var save = function(dbArray){
+// var save = function(dbArray){
 
 // Export local storage functions
 exports.authenticate = authenticate;
-exports.save = save;
+// exports.save = save;

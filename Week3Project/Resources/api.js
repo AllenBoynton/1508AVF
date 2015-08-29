@@ -22,7 +22,7 @@ var getData = function(){
 					};
 					shopArray.push(repairShop);
 				}
-				data.saves(shopArray); 
+				data.save(shopArray); 
 			},
 			onerror: function(e){
 				alert("An error has occurred.");
