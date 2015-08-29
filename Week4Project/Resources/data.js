@@ -27,8 +27,9 @@ var read = function(){
 var saves = function(shopArray){
 	var db = Ti.Database.open("repairShop");
 	db.execute("CREATE TABLE IF NOT EXISTS shopTable (id INTEGER PRIMARY KEY, name TEXT, address TEXT, distance TEXT, make TEXT, repairs TEXT, hours TEXT)");
-	db.execute("DELETE FROM shopTable");
+	for (i=0, j=shopArray.length; i<j; i++){
 	db.execute("INSERT INTO shopTable (name, address, distance, make, repairs, hours) VALUES (?,?,?,?,?,?)", shopArray[i].repairShop.name, shopArray[i].repairShop.address, shopArray[i].repairShop.distance, shopArray[i].repairShop.make, shopArray[i].repairShop.repairs, shopArray[i].repairShop.hours);
+	}
     db.close();
     read();
 };

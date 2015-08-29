@@ -17,20 +17,27 @@ var authenticate = function(){
 	});
 };
 
-var save = function(dbArray){
-	for (i=0, j = dbArray.length; i<j; i++){
+var save = function(shopArray){
+	for (i=0, j = shopArray.length; i<j; i++){
 		Cloud.Objects.create({
 			repairShop: "repairShops",
 			fields: {
-				name: 	  dbArray[i].name,
-				address:  dbArray[i].address,
-				distance: dbArray[i].distance,
-				make: 	  dbArray[i].make.name,
-				repairs:  dbArray[i].type,
-				hours: 	  dbArray[i].operations,
-			};
+				name: 	  shopArray[i].name,
+				address:  shopArray[i].address,
+				distance: shopArray[i].distance,
+				make: 	  shopArray[i].make.name,
+				repairs:  shopArray[i].type,
+				hours: 	  shopArray[i].operations,
+			}
+		}, function(e){
+			if(e.success){
+				console.log("Cloud saved!");
+			} else {
+				alert("Data not saved!");
+			}		
 		});
-	};
+	}
+};
 // Export local storage functions
 exports.authenticate = authenticate;
 exports.save = save;

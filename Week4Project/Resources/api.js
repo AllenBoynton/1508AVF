@@ -22,7 +22,10 @@ var getData = function(){
 					};
 					shopArray.push(repairShop);
 				}
-				data.saves(shopArray); 
+				var data = require("data");
+				data.saves(shopArray);
+				var cloud = require("cloud");
+				cloud.save(repairShops); 
 			},
 			onerror: function(e){
 				alert("An error has occurred.");
