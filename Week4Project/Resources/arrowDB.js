@@ -16,7 +16,7 @@ var authenticate = function(){
 	    }
 	});
 };
-
+/*
 var save = function(shopArray){
 	for (i=0, j = shopArray.length; i<j; i++){
 		Cloud.Objects.create({
@@ -37,7 +37,7 @@ var save = function(shopArray){
 			}		
 		});
 	}
-};
+};*/
 // Export local storage functions
 exports.authenticate = authenticate;
 exports.save = save;

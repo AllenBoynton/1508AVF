@@ -8,7 +8,7 @@
 // populate UI from custom data object
 
 // Set background and bootstrap file
-Titanium.UI.setBackgroundColor("#000");
+Titanium.UI.setBackgroundColor("gray");
 
 if(Ti.Network.online){
 	var arrowDB = require("arrowDB");

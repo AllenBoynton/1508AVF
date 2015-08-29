@@ -1,5 +1,4 @@
 // Module with function to check network
-var data = require("data");
 
 var getData = function(){
 	var url = "http://api.edmunds.com/api/dealer/v2/repairshops/?zipcode=29607&radius=100&pageNum=1&pageSize=10&sortby=distance:ASC&view=basic&callback=repairShops&api_key=a69s88jdn9qtfdyufxr9mch9";
@@ -23,9 +22,9 @@ var getData = function(){
 					shopArray.push(repairShop);
 				}
 				var data = require("data");
-				data.saves(shopArray);
-				var cloud = require("cloud");
-				cloud.save(repairShops); 
+				data.saves(repairShop);
+				// var arrowDB = require("arrowDB");
+				// arrowDB.save(repairShop); 
 			},
 			onerror: function(e){
 				alert("An error has occurred.");

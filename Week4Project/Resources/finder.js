@@ -1,5 +1,8 @@
 // Module with function with searched repair shops
-// Results screen with options
+var api = require("api");
+var data = require("data");
+var ui = require("ui");
+
 var finder = function(){	
 	var bg = Ti.UI.createWindow({
 		backgroundImage: "images/skidmarks.jpg",
@@ -50,7 +53,7 @@ var finder = function(){
 		text: "FAVORITES",		
 	});
 		
-	var name = Ti.UI.createLabel(/*labelFormat*/{
+	var name = Ti.UI.createLabel({
 		color: "white", 
 		top: 3,
 		text: "name",
@@ -58,14 +61,14 @@ var finder = function(){
 		font: {fontSize: 32, fontWeight: "bold"}
 	});	
 	
-	var address = Ti.UI.createLabel(/*labelFormat*/{
+	var address = Ti.UI.createLabel({
 		color: "white", 
 		top: 20,
 		text: "address",
 		font: {fontSize: 22, fontWeight: "bold"}
 	});	
 	
-	var distance = Ti.UI.createLabel(/*labelFormat*/{
+	var distance = Ti.UI.createLabel({
 		color: "white", 
 		top: address.top + 50,
 		left: 20,
@@ -73,7 +76,7 @@ var finder = function(){
 		font: {fontSize: 18, fontWeight: "bold"}
 	});	
 	
-	var make = Ti.UI.createLabel(/*labelFormat*/{
+	var make = Ti.UI.createLabel({
 		color: "white", 
 		top: distance.top + 50,
 		left: 20,
@@ -81,7 +84,7 @@ var finder = function(){
 		font: {fontSize: 18, fontWeight: "bold"}
 	});	
 	
-	var repairs = Ti.UI.createLabel(/*labelFormat*/{
+	var repairs = Ti.UI.createLabel({
 		color: "white", 
 		top: make.top + 50,
 		left: 20,
@@ -89,7 +92,7 @@ var finder = function(){
 		font: {fontSize: 18, fontWeight: "bold"}
 	});	
 	
-	var hours = Ti.UI.createLabel(/*labelFormat*/{
+	var hours = Ti.UI.createLabel({
 		color: "white", 
 		top: 20,
 		left: 20,
@@ -117,12 +120,12 @@ var finder = function(){
 	infoView.add(make);
 	infoView.add(repairs);
 	hoursView.add(hours);
-	mainWin.openWindow(bg);
+	mainWin.open(bg);
 	mainWin.open();
-	
-	
+		
 	exports.addText = addText;
 };
 
+findWindow.addEventListener("click", finder);
 // Exports
 exports.finder = finder;

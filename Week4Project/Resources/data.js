@@ -4,7 +4,7 @@ var ui = require("ui");
 // Ti.Database.install("repairCenters.sqlite", "repairCenter");
 
 var read = function(){
-	var db = Ti.Database.open("repairShop");
+	var db = Ti.Database.open(repairshop);
 	db.execute("CREATE TABLE IF NOT EXISTS shopTable (id INTEGER PRIMARY KEY, name TEXT, address TEXT, distance TEXT, make TEXT, repairs TEXT, hours TEXT)");
 	var dbResults = db.execute("Select * FROM shopTable");
 		while (dbResults.isValidRow()){
@@ -24,8 +24,8 @@ var read = function(){
 };
 
 // Function saves data to database
-var saves = function(shopArray){
-	var db = Ti.Database.open("repairShop");
+var saves = function(repairShop){
+	var db = Ti.Database.open(repairshop);
 	db.execute("CREATE TABLE IF NOT EXISTS shopTable (id INTEGER PRIMARY KEY, name TEXT, address TEXT, distance TEXT, make TEXT, repairs TEXT, hours TEXT)");
 	for (i=0, j=shopArray.length; i<j; i++){
 	db.execute("INSERT INTO shopTable (name, address, distance, make, repairs, hours) VALUES (?,?,?,?,?,?)", shopArray[i].repairShop.name, shopArray[i].repairShop.address, shopArray[i].repairShop.distance, shopArray[i].repairShop.make, shopArray[i].repairShop.repairs, shopArray[i].repairShop.hours);
