@@ -18,7 +18,19 @@ var authenticate = function(){
 };
 
 var save = function(dbArray){
-
+	for (i=0, j = dbArray.length; i<j; i++){
+		Cloud.Objects.create({
+			repairShop: "repairShops",
+			fields: {
+				name: 	  dbArray[i].name,
+				address:  dbArray[i].address,
+				distance: dbArray[i].distance,
+				make: 	  dbArray[i].make.name,
+				repairs:  dbArray[i].type,
+				hours: 	  dbArray[i].operations,
+			};
+		});
+	};
 // Export local storage functions
 exports.authenticate = authenticate;
 exports.save = save;

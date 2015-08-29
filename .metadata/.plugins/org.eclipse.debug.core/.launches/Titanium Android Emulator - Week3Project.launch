@@ -2,7 +2,7 @@
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.android.simulator.launchConfigurationType">
 <stringAttribute key="ATTR_PROJECT_NAME" value="Week3Project"/>
 <stringAttribute key="abi" value="armeabi"/>
-<stringAttribute key="device-id" value="Samsung Galaxy Note 3 - 4.4.4"/>
+<stringAttribute key="device-id" value="Samsung Galaxy S5 - 4.4.4"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/Week3Project"/>
 </listAttribute>
