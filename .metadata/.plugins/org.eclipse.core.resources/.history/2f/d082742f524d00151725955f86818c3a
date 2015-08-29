@@ -1,0 +1,80 @@
+// app launches
+// check for network
+// authenticate our app with ArrowDB
+// grab api data (create custom data object)
+// save custom data object locally
+// save custom data object cloud
+// read local data (create custom data object)
+// populate UI from custom data object
+
+// Set background and bootstrap file
+Titanium.UI.setBackgroundColor("#000");
+
+if(Ti.Network.online){
+	var arrowDB = require("arrowDB");
+	arrowDB.authenticate();
+} else {
+	alert("Please verify Network settings");
+	var data = require("data");
+	data.read();
+};
+
+// Home screen menu
+var mainWin = Ti.UI.createWindow({
+	backgroundImage: "images/tire-tracks.png",
+	text: "Car-U-Repair-It",
+	height: "100%",
+	width: "100%",
+	color: "yellow",	
+	layout: "vertical"
+});
+
+mainWin.addEventListener("open", function(){
+	var sound = Ti.Media.createSound({
+		url: "sounds/Engine_revving.wav",
+		volume: 0.2
+	});
+	sound.play();
+});
+
+var logo = Ti.UI.createImageView({
+	backgroungColor: "#000",
+	image: "images/repair_icon.jpeg",
+	width: "auto",
+	height: "auto",
+	top: "10%"
+});
+if(deviceOS === "android"){
+	logo.width  = "100%";
+	logo.height = "25%";
+};
+
+var menuWindow = Ti.UI.createView({
+	backgroundColor: "gray",
+	opacity: .7,
+	top: "25%",
+	height: "60%",
+	left: "5%",
+	right: "5%",
+	borderRadius: 8,
+	borderWidth: 2,
+	borderColor: "black"
+});
+
+var findButton = Ti.UI.createButton({
+	text: "Find a repair center",
+	color: "black",
+	top: "30%",
+	left: "5%",
+	width: "auto",
+	height: "auto"
+});
+
+var ui = require("ui");
+
+findButton.addEventListener("click", ui);
+
+mainWin.add(logo);
+mainWin.add(menuWindow);
+menuWindow.add(findButton);
+mainWin.open();

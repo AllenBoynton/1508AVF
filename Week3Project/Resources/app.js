@@ -18,3 +18,6 @@ if(Ti.Network.online){
 	var data = require("data");
 	data.read();
 };
+
+var ui = require("ui");
+var data = require("data");
