@@ -1,5 +1,5 @@
 
-Fri Aug 28 2015 21:37:07 GMT-0400 (EDT)
+Fri Aug 28 2015 21:59:08 GMT-0400 (EDT)
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.1.0.GA --project-dir /Users/aboynton/Desktop/AVF1508/Week3Project --target simulator --ios-version 8.4 --device-family universal --sim-type iphone --sim-version 8.4 --device-id 0F5E25FA-4594-438B-B90A-6565F272B0EA --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49612 --plugin-paths /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules --config-file /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/build-1440812223579.json --no-banner
+  /usr/local/bin/node /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.1.0.GA --project-dir /Users/aboynton/Desktop/AVF1508/Week3Project --target simulator --ios-version 8.4 --device-family universal --sim-type iphone --sim-version 8.4 --device-id D4CB615D-7DCA-43DE-A315-B4061F5ED34B --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49612 --plugin-paths /Users/aboynton/.appcelerator/install/4.1.2/package/node_modules --config-file /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/build-1440813544562.json --no-banner
 
 [DEBUG]  Detecting modules in /Users/aboynton/Library/Application Support/Titanium/modules
 [DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/aboynton/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
@@ -60,8 +60,8 @@ Command
 [INFO]   Deploy type: development
 [INFO]   Building for target: simulator
 [INFO]   Building using iOS SDK: 8.4
-[INFO]   Building for iOS Simulator: iPhone 6
-[DEBUG]  UDID: 0F5E25FA-4594-438B-B90A-6565F272B0EA
+[INFO]   Building for iOS Simulator: iPhone 5s
+[DEBUG]  UDID: D4CB615D-7DCA-43DE-A315-B4061F5ED34B
 [DEBUG]  Simulator type: iphone
 [DEBUG]  Simulator version: 8.4
 [INFO]   Building for device family: universal
@@ -75,10 +75,9 @@ Command
 [INFO]   Forcing rebuild: /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build-manifest.json does not exist
 [INFO]   Initiating prepare phase
 [TRACE]  offline build file /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/build-5b9f63954d73e6eb172f5fd427edc5997558b1c1.json
-[TRACE]  online 0
-[TRACE]  sending request {"json":{"username":"aboynton@fullsail.edu","session":"16210c06877b5e8aa84de39f627c86bc9277da99 wuzAKgaln73OkJserZQSaohtRNbpuypP9CYiEjSwR4uzmKLl7ad8kctKiMaJa6nMyhsRRy2U00m3YoGfW0G29l2YJHvub1mBO0uYgt3MnRziiXgwBbYxSxx/2n6+20DvIS98oYN/EFBujPz/cRTr1Dc5PqgGym3oCqoyAHeI+5nhTYvnR/d9kaS+HG9GQsMPJ/E9MwP8GAUeViqjRSia9L0sTsl3CrRnZfe4SKfxq+Dr9P2z3+kwuBDcV8jeXUctPzb8y3GWuCLGlCzs+XfNSQaUWz9CeSBtrwiyzryGSiG3/EZDKS5FpxF91ExZFGW41k0BHM3jV4WWD+EBk0UoOIPLp2kmhv/DarQ/EXSO2KOf8Sb56f6pn0SA7QJzSwhqM1PoTeE+T+mDQS7r0oCgbWZM7FijKFU8bT103dY0GPlkvBAopUi12YlFGcq/YQIdmJWPuIoWWyI+awbSCdpOgiXhQAPzb82ktO+sho4MA2Mk30wSE3luDB3idZZsClLakjTS5SrxqQaKj7Ipx9DIZpQ42ePbmy4FJ9iXosETZjOZG/KiBJ2/YB+ZjZ4u7oCFHbeJ7UUVTXnnx80ZAnyPaLXzDPUszvwnqMp1TePPyEnNBvJIS0viIFFbYOLM9lQOSYb/Msly7smCnbpbANriuexlBJCz+OqTk6b7UDulMltmPdxhTKA3M7iwsF4SfKyKO3pNeWpB+ncc6N86ZcxPRdCq3yLvMrUQgb25YKzDJMdI3luKRi1xgzjgXUR6JETQXSjq7Ix6oHoyqU36Ox9I/q69SgnJbOsytFcFDBXVtV8=","ipaddress":"192.168.1.7","fingerprint":"389dda3157753a35e1ffefdb30c447bfee725f30","fingerprint_description":"Mac OSX Serial Number: C02MW2Q4FD58","guid":"a81ed37c-8671-4bde-9444-00160327f4d2","appid":"edu.fullsail.Week3Project","name":"Week3Project","org_id":100039098,"deploytype":"development","tiappxml":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ti:app \n  xmlns:ti=\"http://ti.appcelerator.org\">\n  <id>edu.fullsail.Week3Project</id>\n  <name>Week3Project</name>\n  <version>1.0</version>\n  <publisher>aboynton</publisher>\n  <url>http://www.mysite.com</url>\n  <description>undefined</description>\n  <copyright>2015 by aboynton</copyright>\n  <icon>appicon.png</icon>\n  <fullscreen>false</fullscreen>\n  <navbar-hidden>true</navbar-hidden>\n  <analytics>true</analytics>\n  <guid>a81ed37c-8671-4bde-9444-00160327f4d2</guid>\n  <property name=\"ti.ui.defaultunit\" type=\"string\">dp</property>\n  <ios>\n    <plist>\n      <dict>\n        <key>NSLocationAlwaysUsageDescription</key>\n        <string>This Utility application needs your Location to gather data.</string>\n        <key>UISupportedInterfaceOrientations~iphone</key>\n        <array>\n          <string>UIInterfaceOrientationPortrait</string>\n        </array>\n        <key>UISupportedInterfaceOrientations~ipad</key>\n        <array>\n          <string>UIInterfaceOrientationPortrait</string>\n          <string>UIInterfaceOrientationPortraitUpsideDown</string>\n          <string>UIInterfaceOrientationLandscapeLeft</string>\n          <string>UIInterfaceOrientationLandscapeRight</string>\n        </array>\n        <key>UIRequiresPersistentWiFi</key>\n        <false/>\n        <key>UIPrerenderedIcon</key>\n        <false/>\n        <key>UIStatusBarHidden</key>\n        <false/>\n        <key>UIStatusBarStyle</key>\n        <string>UIStatusBarStyleDefault</string>\n      </dict>\n    </plist>\n  </ios>\n  <android \n    xmlns:android=\"http://schemas.android.com/apk/res/android\"/>\n    <mobileweb>\n      <precache/>\n      <splash>\n        <enabled>true</enabled>\n        <inline-css-images>true</inline-css-images>\n      </splash>\n      <theme>default</theme>\n    </mobileweb>\n    <modules>\n      <module platform=\"commonjs\">ti.cloud</module>\n    </modules>\n    <deployment-targets>\n      <target device=\"android\">true</target>\n      <target device=\"ipad\">true</target>\n      <target device=\"iphone\">true</target>\n      <target device=\"mobileweb\">false</target>\n      <target device=\"windows\">false</target>\n    </deployment-targets>\n    <sdk-version>4.1.0.GA</sdk-version>\n    <property name=\"appc-app-id\" type=\"string\">55dbd63ae4fa64fe4feb86ee</property>\n    <property name=\"acs-authbase-url-development\" type=\"string\">***</property>\n    <property name=\"acs-base-url-development\" type=\"string\">***</property>\n    <property name=\"acs-oauth-secret-development\" type=\"string\">***</property>\n    <property name=\"acs-oauth-key-development\" type=\"string\">***</property>\n    <property name=\"acs-api-key-development\" type=\"string\">***</property>\n    <property name=\"acs-username-development\" type=\"string\">***</property>\n    <property name=\"acs-password-development\" type=\"string\">***</property>\n    <property name=\"acs-authbase-url-production\" type=\"string\">***</property>\n    <property name=\"acs-base-url-production\" type=\"string\">***</property>\n    <property name=\"acs-oauth-secret-production\" type=\"string\">***</property>\n    <property name=\"acs-oauth-key-production\" type=\"string\">***</property>\n    <property name=\"acs-api-key-production\" type=\"string\">***</property>\n    <property name=\"acs-username-production\" type=\"string\">***</property>\n    <property name=\"acs-password-production\" type=\"string\">***</property>\n    <property name=\"appc-org-id\" type=\"string\">100039098</property>\n    <property name=\"appc-creator-user-id\" type=\"string\">23d731c8-74c2-4310-a37f-38923187abd1</property>\n  </ti:app>","modules":[{"id":"ti.cloud","platform":["commonjs"],"deployType":["development"],"modulePath":"/Users/aboynton/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9","version":"3.2.9","manifest":{"version":"3.2.9","description":"Appcelerator Cloud Services","author":"Dawson Toth, Jeff English, Jon Alter, Paul Lv, Michael Goff, and Pedro Enrique","license":"Appcelerator Commercial License","copyright":"Copyright (c) 2011-2014 by Appcelerator,  Inc.","name":"ti.cloud","moduleid":"ti.cloud","guid":"1056b5d2-2bb5-4339-b930-297637aeec4e","platform":"commonjs","minsdk":"2.1.0"},"native":false,"libFile":"/Users/aboynton/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9/ti.cloud.js"}]},"gzip":true,"followAllRedirects":true,"url":"https://security.appcelerator.com/build-verify"}
-[TRACE]  result from /build-verify=> {"key":"S75NtAMY4vNI2dSjTFLFPQ==","pepper":"ZtCW7dYiXsZ035682P7Tcw==","hmacKey":"8CYZpLBCoFmDubr5oEFJgw==","o":100039098,"u":"23d731c8-74c2-4310-a37f-38923187abd1","p":"free","i":"55e10cc26c03980c15906054","success":true}, err=null
-[INFO]   JavaScript files need to be encrypted
+[TRACE]  online 1
+[TRACE]  optimizing build, last build was 1319.337 sec ago
+[INFO]   Cleaning old build directory
 [INFO]   Performing full rebuild
 [INFO]   Copying Xcode iOS files
 [DEBUG]  Copying /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/Classes
@@ -421,298 +420,3 @@ Command
 [DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIActivityIndicatorProxy.h
 [DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIActivityIndicatorProxy.m
 [DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIAlertDialogProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIAlertDialogProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIAttributedStringProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIAttributedStringProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIButton.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIButton.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIButtonBar.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIButtonBar.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIButtonBarProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIButtonBarProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIButtonProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIButtonProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUICanvasView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUICanvasView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUICanvasViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUICanvasViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIClipboardProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIClipboardProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIDashboardItem.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIDashboardItem.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIDashboardItemProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIDashboardItemProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIDashboardView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIDashboardView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIDashboardViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIDashboardViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIEmailDialogProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIEmailDialogProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIImageView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIImageView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIImageViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIImageViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUILabel.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUILabel.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUILabelProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUILabelProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListItem.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListItem.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListItemProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListItemProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListSectionProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListSectionProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIListViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIMaskedImage.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIMaskedImage.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIMaskedImageProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIMaskedImageProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUINavBarButton.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUINavBarButton.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIOptionDialogProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIOptionDialogProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIPicker.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIPicker.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIPickerColumnProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIPickerColumnProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIPickerProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIPickerProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIPickerRowProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIPickerRowProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIProgressBar.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIProgressBar.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIProgressBarProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIProgressBarProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIRefreshControlProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIRefreshControlProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIScrollView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIScrollView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIScrollViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIScrollViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIScrollableView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIScrollableView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIScrollableViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIScrollableViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISearchBar.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISearchBar.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISearchBarProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISearchBarProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISlider.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISlider.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISliderProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISliderProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISwitch.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISwitch.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISwitchProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUISwitchProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITabGroup.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITabGroup.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITabGroupProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITabGroupProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITabProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITabProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableViewAction.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableViewAction.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableViewRowProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableViewRowProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableViewSectionProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITableViewSectionProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextArea.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextArea.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextAreaProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextAreaProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextField.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextField.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextFieldProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextFieldProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextWidget.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextWidget.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextWidgetProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUITextWidgetProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIWebView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIWebView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIWebViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIWebViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIWindow.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIWindow.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIWindowProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIWindowProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSAdView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSAdView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSAdViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSAdViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSCoverFlowView.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSCoverFlowView.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSCoverFlowViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSCoverFlowViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSDocumentViewerProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSDocumentViewerProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSNavWindow.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSNavWindow.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSNavWindowProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSNavWindowProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSSplitWindow.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSSplitWindow.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSSplitWindowProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSSplitWindowProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSTabbedBarProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSTabbedBarProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSToolbar.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSToolbar.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSToolbarProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSToolbarProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSTransitionAnimationProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiOSTransitionAnimationProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadPopoverProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadPopoverProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadSplitWindow.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadSplitWindow.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadSplitWindowButtonProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadSplitWindowButtonProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadSplitWindowProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPadSplitWindowProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneActivityIndicatorStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneActivityIndicatorStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneAlertDialogStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneAlertDialogStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneAnimationStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneAnimationStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneProgressBarStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneProgressBarStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneRowAnimationStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneRowAnimationStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneScrollIndicatorStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneScrollIndicatorStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneStatusBarProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneStatusBarProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneSystemButtonProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneSystemButtonProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneSystemButtonStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneSystemButtonStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneSystemIconProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneSystemIconProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneTableViewCellSelectionStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneTableViewCellSelectionStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneTableViewScrollPositionProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneTableViewScrollPositionProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneTableViewSeparatorStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneTableViewSeparatorStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneTableViewStyleProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUIiPhoneTableViewStyleProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUtils.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiUtils.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiViewAttachBehavior.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiViewAttachBehavior.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiViewController.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiViewController.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiViewProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiViewProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiViewTemplate.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiViewTemplate.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiWindowProxy.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TiWindowProxy.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TopTiModule.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/TopTiModule.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UIImage+Alpha.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UIImage+Alpha.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UIImage+Resize.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UIImage+Resize.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UIImage+RoundedCorner.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UIImage+RoundedCorner.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UIModule.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UIModule.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UtilsModule.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/UtilsModule.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/WebFont.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/WebFont.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/Webcolor.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/Webcolor.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/XHRBridge.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/XHRBridge.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/XMLModule.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/XMLModule.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/YahooModule.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/YahooModule.m
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/Classes/defines.h
-[DEBUG]  Copying /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/headers
-[DEBUG]  Copying /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/headers/JavaScriptCore
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/Ti.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiBase.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiContext.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiContextRef.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiExport.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiManagedValue.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiObjectRef.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiStringRef.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiStringRefCF.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiValue.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiValueRef.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/TiVirtualMachine.h
-[DEBUG]  Processing /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/headers/JavaScriptCore/WebKitAvailability.h
-[DEBUG]  Copying /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/iphone/Titanium_Prefix.pch => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/Week3Project_Prefix.pch
-[INFO]   Creating Xcode project directory: /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/Week3Project.xcodeproj
-[INFO]   Writing Xcode project data file: Titanium.xcodeproj/project.pbxproj
-[INFO]   Writing Xcode module configuration: module.xcconfig
-[DEBUG]  Writing /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/main.m
-[DEBUG]  Writing application modules source file: /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/Classes/ApplicationMods.m
-[DEBUG]  Writing module xcconfig file: /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/module.xcconfig
-[INFO]   Updating Xcode project configuration: project.xcconfig
-[DEBUG]  Setting Info.plist CFBundleVersion to 1.0
-[DEBUG]  Setting Info.plist CFBundleShortVersionString to 1.0
-[INFO]   Forcing rebuild: ApplicationDefaults.m has changed since last build
-[INFO]   Writing application defaults: /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/Classes/ApplicationDefaults.m
-[DEBUG]  Copying /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/libtiverify.a => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/lib/libtiverify.a
-[DEBUG]  Copying /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/libti_ios_debugger.a => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/lib/libti_ios_debugger.a
-[DEBUG]  Copying /Users/aboynton/Library/Application Support/Titanium/mobilesdk/osx/4.1.0.GA/iphone/libti_ios_profiler.a => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/lib/libti_ios_profiler.a
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/appicon.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/appicon.png
-[INFO]   Initiating Xcode pre-compile phase
-[DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/.DS_Store
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/KS_nav_ui.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/KS_nav_ui.png
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/KS_nav_views.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/KS_nav_views.png
-[DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/android
-[DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/.DS_Store
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/BMW_fix.jpg => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/BMW_fix.jpg
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/Engine.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/Engine.png
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/Infiniti.jpg => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/Infiniti.jpg
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/Infiniti_1.JPG => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/Infiniti_1.JPG
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/Infiniti_engine.jpg => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/Infiniti_engine.jpg
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/car.9.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/car.9.png
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/repair_icon.jpeg => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/repair_icon.jpeg
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/shop1.jpg => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/shop1.jpg
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/skidmarks.jpg => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/skidmarks.jpg
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/skids.jpeg => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/skids.jpeg
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/images/tire-tracks.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/images/tire-tracks.png
-[DEBUG]  Ignoring /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/sounds/Engine_revving.wav => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/sounds/Engine_revving.wav
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default-568h@2x.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default-568h@2x.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default-667h@2x.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default-667h@2x.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default-Landscape-736h@3x.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default-Landscape-736h@3x.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default-Landscape.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default-Landscape.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default-Landscape@2x.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default-Landscape@2x.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default-Portrait-736h@3x.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default-Portrait-736h@3x.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default-Portrait.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default-Portrait.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default-Portrait@2x.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default-Portrait@2x.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/Default@2x.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/Default@2x.png
-[DEBUG]  Copying /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/iphone/appicon.png => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/build/Debug-iphonesimulator/Week3Project.app/appicon.png
-[INFO]   Processing JavaScript files
-[DEBUG]  Symlinking /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/api.js => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/assets/api_js
-[DEBUG]  Symlinking /var/folders/ng/wpzg_lm131z1tf4pkhdtnyyw0000gn/T/liveview.js => /Users/aboynton/Desktop/AVF1508/Week3Project/build/iphone/assets/app_js
-[ERROR]  Failed to parse /Users/aboynton/Desktop/AVF1508/Week3Project/Resources/arrowDB.js
