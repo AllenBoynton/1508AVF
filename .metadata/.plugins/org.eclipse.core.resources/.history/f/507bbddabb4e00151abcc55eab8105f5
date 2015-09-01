@@ -1,0 +1,26 @@
+var Cloud = require("ti.cloud");
+Cloud.debug = true;
+
+var login = function(){	
+	Cloud.Users.login({
+	    login: "admin",
+	    password: "12345"
+	}, function (e) {
+		console.log(e);
+	    if (e.success) {
+	        var api = require("api");
+	        api.network();
+	    } else {
+	        alert("Error: " + e.message);
+    }, function(e){
+		if(e.success){
+			console.log("Cloud saved!");
+		} else {
+			alert("Data not saved!");
+		}		
+	});
+};
+login();
+
+// Export local storage functions
+exports.login = login;

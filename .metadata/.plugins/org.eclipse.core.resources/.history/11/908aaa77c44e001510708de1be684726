@@ -1,0 +1,153 @@
+// User Interface module and text with json data display
+// Universal variables
+// var screenWidth = Ti.Platform.displayCaps.platformWidth;
+// var screenHeight = Ti.Platform.displayCaps.platformHeight;
+var deviceOS = Ti.Platform.osname;
+console.log(deviceOS);
+
+var app = require("app");
+
+// Homescreen function
+var homeScreen = function(){
+	console.log("homeScreen");
+
+	var logo = Ti.UI.createImageView({
+		opacity: .9,
+		image: "images/repair_icon.jpeg",
+		width: "100%",
+		height: "auto",
+		top: 0
+	});
+	
+	var titleLabel = Ti.UI.createLabel({
+		text: "Car-U-Repair-It",
+		color: "black",
+		top: "3%",
+		left: "5%",
+		font: {fontSize: 26, fontWeight: "bold"}
+	});
+	
+	var desc = Ti.UI.createLabel({
+		text: "...find a local repair shop",
+		color: "black",
+		bottom: "1%",
+		right: "3%",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+
+	// Home screen menu	
+	var findWindow = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: .9,
+		top: "8%",
+		height: "8%",
+		left: "4%",
+		right: "3%",
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+	
+	var findButton = Ti.UI.createLabel({
+		text: "Find a Repair Center",
+		color: "white",
+		top: "25%",
+		width: "auto",
+		height: "auto",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+	
+	var savedWindow = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: .9,
+		top: "6%",
+		height: "8%",
+		left: "4%",
+		right: "3%",
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+	
+	var savedButton = Ti.UI.createLabel({
+		text: "View saved Repair Centers",
+		color: "white",
+		top: "25%",
+		width: "auto",
+		height: "auto",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+	
+	var eraseWindow = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: .9,
+		top: "6%",
+		height: "8%",
+		left: "4%",
+		right: "3%",
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+
+	var eraseButton = Ti.UI.createLabel({
+		text: "Erase saved Repair Centers",
+		color: "white",
+		top: "25%",
+		width: "auto",
+		height: "auto",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+	
+	if(deviceOS === "android"){
+		Ti.Geolocation.purpose = "Your location is needed to gather local Repair Shops";
+	};
+	
+	if(Ti.Geolocation.hasCompass){
+		var compassLabel = Ti.UI.createLabel({
+			text: "Compass",
+			color: "black",
+			top: "65%",
+			right: "5%",
+			width: "auto",
+			height: "auto"
+		});
+		mainWin.add(compassLabel);
+		
+		var compass = require("compass");
+		compassLabel.addEventListener("click", compass.openCompass);
+	} else {
+		var compassLabel = Ti.UI.createLabel({
+			text: "Compass",
+			color: "black",
+			top: "65%",
+			right: "5%",
+			width: "auto",
+			height: "auto"
+		});
+		mainWin.add(compassLabel);
+	
+	// Eventlisteners
+	var finder = require("finder");
+	findWindow.addEventListener("click", finder.bg);
+	/*
+	var savedShops = require("savedShops");
+	savedButton.addEventListener("click", savedShops);
+	
+	var eraseShops = require("eraseShops");
+	eraseButton.addEventListener("click", eraseShops);*/		
+
+	mainWin.add(logo);
+	logo.add(titleLabel);
+	logo.add(desc);
+	mainWin.add(findWindow);
+	mainWin.add(savedWindow);
+	mainWin.add(eraseWindow);
+	findWindow.add(findButton);
+	savedWindow.add(savedButton);
+	eraseWindow.add(eraseButton);
+
+};
+	
+// Export screen/display functions
+exports.homeScreen = homeScreen;

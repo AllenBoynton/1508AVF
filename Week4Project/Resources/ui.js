@@ -1,13 +1,12 @@
 // User Interface module and text with json data display
+var data = require("data");
+var api = require("api");
 
-// Universal variables
-var screenWidth = Ti.Platform.displayCaps.platformWidth;
-var screenHeight = Ti.Platform.displayCaps.platformHeight;
 var deviceOS = Ti.Platform.osname;
 console.log(deviceOS);
 
 // Homescreen function
-// var homeScreen = function(){
+var homeScreen = function(){
 	var mainWin = Ti.UI.createWindow({
 		backgroundImage: "images/tire-tracks.png",
 		top: 20,
@@ -115,52 +114,28 @@ console.log(deviceOS);
 	if(deviceOS === "android"){
 		Ti.Geolocation.purpose = "Your location is needed to gather local Repair Shops";
 	};
-	/*
-	if(Ti.Geolocation.hasCompass){
-		var compassLabel = Ti.UI.createLabel({
-			text: "Compass",
-			color: "black",
-			top: "65%",
-			right: "5%",
-			width: "auto",
-			height: "auto"
-		});
-		mainWin.add(compassLabel);
-		
-		var compass = require("compass");
-		compassLabel.addEventListener("click", compass.openCompass);
-	} else {
-		var compassLabel = Ti.UI.createLabel({
-			text: "Compass",
-			color: "black",
-			top: "65%",
-			right: "5%",
-			width: "auto",
-			height: "auto"
-		});
-		mainWin.add(compassLabel);*/
 	
 	mainWin.add(logo);
 	logo.add(titleLabel);
 	logo.add(desc);
-	mainWin.add(findWindow);
-	mainWin.add(savedWindow);
-	mainWin.add(eraseWindow);
-	findWindow.add(findButton);
-	savedWindow.add(savedButton);
-	eraseWindow.add(eraseButton);
+	mainWin.add(findButton);
+	mainWin.add(savedButton);
+	mainWin.add(eraseButton);
+	findButton.add(findLabel);
+	savedButton.add(savedLabel);
+	eraseButton.add(eraseLabel);
 	mainWin.open();
-		
+
 	// Eventlisteners
-	var finder = require("finder");
-	
+	findWindow.addEventListener("click", finder.bg);
 	/*
 	var savedShops = require("savedShops");
 	savedButton.addEventListener("click", savedShops);
 	
 	var eraseShops = require("eraseShops");
-	eraseButton.addEventListener("click", eraseShops);
-// };		
-*/	
+	eraseButton.addEventListener("click", eraseShops);*/		
+
+};
+	
 // Export screen/display functions
-// exports.homeScreen = homeScreen;
+exports.homeScreen = homeScreen;

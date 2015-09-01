@@ -1,13 +1,14 @@
 // Module with function to check network
+var geo = require("geo");
 
-var getData = function(){
-	var url = "http://api.edmunds.com/api/dealer/v2/repairshops/?zipcode=29607&radius=100&pageNum=1&pageSize=10&sortby=distance:ASC&view=basic&callback=repairShops&api_key=a69s88jdn9qtfdyufxr9mch9";
+var network = function(){
+	var url = "http://api.edmunds.com/api/dealer/v2/repairshops/?zipcode=29607&radius=100&pageNum=1&pageSize=10&sortby=distance%3AASC&view=full&api_key=a69s88jdn9qtfdyufxr9mch9";
 	if(Ti.Network.online){
 		var client = Ti.Network.createHTTPClient({
 			onload: function(e){
 				// Parse data to json
 				var json = JSON.parse(this.responseText);
-				var repairShops = json.repairShops;
+				var repairShops = json.repairshops;
 				var shopArray = [];
 				
 				for(i=0, j=repairShops.length; i<j; i++){
@@ -15,16 +16,16 @@ var getData = function(){
 						name: 	  repairShops[i].name,
 						address:  repairShops[i].address,
 						distance: repairShops[i].distance,
-						make: 	  repairShops[i].make.name,
+						make: 	  repairShops[i].make,
 						repairs:  repairShops[i].type,
 						hours: 	  repairShops[i].operations,
 					};
 					shopArray.push(repairShop);
-				}
+				};
 				var data = require("data");
-				data.saves(repairShop);
-				// var arrowDB = require("arrowDB");
-				// arrowDB.save(repairShop); 
+				data.saves(shopArray);
+				var arrowDB = require("arrowDB");
+				arrowDB.login(shopArray); 
 			},
 			onerror: function(e){
 				alert("An error has occurred.");
@@ -35,8 +36,8 @@ var getData = function(){
 		client.send();
 	} else {
 		alert("Network unavailable");
-	}
+	};
 };
 
 // Export network function
-exports.getData = getData;
+exports.network = network;

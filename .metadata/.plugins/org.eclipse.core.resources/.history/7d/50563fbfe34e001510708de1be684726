@@ -1,0 +1,141 @@
+// User Interface module and text with json data display
+var deviceOS = Ti.Platform.osname;
+
+var homeScreen = function(){
+	var mainWin = Ti.UI.createWindow({
+		backgroundImage: "images/tire-tracks.png",
+		top: 20,
+		height: "100%",
+		width: "100%",	
+		layout: "vertical"
+	});
+	
+	mainWin.addEventListener("open", function(){
+		var sound = Ti.Media.createSound({
+		url: "sounds/Engine_revving.wav",
+		volume: 0.1
+	});
+	sound.play();
+	
+	// var splash = require("splash");
+	// splash.splashScreen(); 
+	// });
+	
+	var logo = Ti.UI.createImageView({
+		opacity: 0.9,
+		image: "images/repair_icon.jpeg",
+		width: "100%",
+		height: "auto",
+		top: 0
+	});
+	if(deviceOS === "android"){
+		logo.width = "100%";
+		logo.height = "25%";
+	
+	var titleLabel = Ti.UI.createLabel({
+		text: "Car-U-Repair-It",
+		color: "black",
+		top: "3%",
+		left: "5%",
+		font: {fontSize: 26, fontWeight: "bold"}
+	});
+	
+	var desc = Ti.UI.createLabel({
+		text: "...find a local repair shop",
+		color: "black",
+		bottom: "1%",
+		right: "3%",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+
+	// Home screen menu	
+	var findWindow = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: 0.9,
+		top: "8%",
+		height: "8%",
+		left: "4%",
+		right: "3%",
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+	
+	var findButton = Ti.UI.createLabel({
+		text: "Find a Repair Center",
+		color: "white",
+		top: "25%",
+		width: "auto",
+		height: "auto",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+	
+	var savedWindow = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: 0.9,
+		top: "6%",
+		height: "8%",
+		left: "4%",
+		right: "3%",
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+	
+	var savedButton = Ti.UI.createLabel({
+		text: "View saved Repair Centers",
+		color: "white",
+		top: "25%",
+		width: "auto",
+		height: "auto",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+	
+	var eraseWindow = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: 0.9,
+		top: "6%",
+		height: "8%",
+		left: "4%",
+		right: "3%",
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+
+	var eraseButton = Ti.UI.createLabel({
+		text: "Erase saved Repair Centers",
+		color: "white",
+		top: "25%",
+		width: "auto",
+		height: "auto",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+
+	// Eventlisteners
+	var finder = require("finder");
+	findButton.addEventListener("change", finder.bg);
+	/*
+	var savedShops = require("savedShops");
+	savedButton.addEventListener("click", savedShops);
+	
+	var eraseShops = require("eraseShops");
+	eraseButton.addEventListener("click", eraseShops);*/		
+
+	mainWin.add(logo);
+	logo.add(titleLabel);
+	logo.add(desc);
+	mainWin.add(findWindow);
+	mainWin.add(savedWindow);
+	mainWin.add(eraseWindow);
+	findWindow.add(findButton);
+	savedWindow.add(savedButton);
+	eraseWindow.add(eraseButton);
+	mainWin.open();
+
+};
+
+var loadFile = require("app");
+	
+// Export screen/display functions
+exports.homeScreen = homeScreen;

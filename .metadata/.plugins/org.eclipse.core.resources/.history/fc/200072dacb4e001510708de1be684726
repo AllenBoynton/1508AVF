@@ -1,0 +1,44 @@
+// Module with function to check network
+var data = require("data");
+var geo = require("geo");
+
+var network = function(zip){
+	var url = "http://api.edmunds.com/api/dealer/v2/repairshops/?zipcode=" + zip + "&radius=100&pageNum=1&pageSize=10&sortby=distance%3AASC&view=full&api_key=a69s88jdn9qtfdyufxr9mch9";
+	if(Ti.Network.online){
+		var client = Ti.Network.createHTTPClient({
+			onload: function(e){
+				// Parse data to json
+				var json = JSON.parse(this.responseText);
+				var repairShops = json.repairshops;
+				var shopArray = [];
+				
+				for(i=0, j=repairShops.length; i<j; i++){
+					var repairShop = {
+						name: 	  repairshops[i].name,
+						address:  repairshops[i].address,
+						distance: repairshops[i].distance,
+						make: 	  repairshops[i].make,
+						repairs:  repairshops[i].type,
+						hours: 	  repairshops[i].operations,
+					};
+					shopArray.push(repairShop);
+				}
+				var data = require("data");
+				data.saves(repairShop);
+				var arrowDB = require("arrowDB");
+				arrowDB.login(repairShop); 
+			},
+			onerror: function(e){
+				alert("An error has occurred.");
+			},
+			timeout: 5000
+		});
+		client.open("GET",url);
+		client.send();
+	} else {
+		alert("Network unavailable");
+	}
+};
+
+// Export network function
+exports.network = network;

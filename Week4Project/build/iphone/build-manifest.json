@@ -14,12 +14,12 @@
 	"publisher": "aboynton",
 	"url": "http://www.mysite.com",
 	"version": "1.0",
-	"description": "",
+	"description": "undefined",
 	"copyright": "2015 by aboynton",
 	"guid": "e2a39708-2274-494a-9ddd-191d650668c7",
 	"skipJSMinification": true,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": false,
+	"encryptJS": true,
 	"liveview": true
 }

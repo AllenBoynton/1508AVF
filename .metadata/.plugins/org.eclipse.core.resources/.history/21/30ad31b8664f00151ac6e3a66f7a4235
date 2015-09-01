@@ -1,0 +1,30 @@
+// app launches
+// check for network
+// authenticate our app with ArrowDB
+// grab api data (create custom data object)
+// save custom data object locally
+// save custom data object cloud
+// read local data (create custom data object)
+// populate UI from custom data object
+
+// Set background and bootstrap file
+Titanium.UI.setBackgroundColor("gray");
+
+var data = require("data");
+var arrowDB = require("arrowDB");
+var ui = require("ui");
+
+if(Ti.Network.online){
+	var arrowDB = require("arrowDB");
+	arrowDB.login();
+} else {
+	Ti.Network.addEventListener("change", function(){
+		if(Ti.Network.online){
+			var arrowDB = require("arrowDB");
+			arrowDB.login();
+		} else {
+			alert("Please verify Network settings");
+			data.read();
+		}
+	});
+};

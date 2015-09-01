@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Week4Project/Resources/compass.js&apos; to &apos;splash.js&apos;" description="Rename resource &apos;compass.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/compass.js" name="splash.js" stamp="1440895837434" updateReferences="true"/>
+</session>

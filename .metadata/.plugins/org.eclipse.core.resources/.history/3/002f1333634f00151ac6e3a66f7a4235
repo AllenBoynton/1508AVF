@@ -1,0 +1,264 @@
+// User Interface module and text with json data display
+var deviceOS = Ti.Platform.osname;
+var geo = require("geo");
+
+// var homeScreen = function(){
+	var mainWin = Ti.UI.createWindow({
+		backgroundImage: "images/tire-tracks.png",
+		top: 20,
+		height: "100%",
+		width: "100%",	
+		layout: "vertical"
+	}); 
+	
+	mainWin.addEventListener("open", function(){
+		var sound = Ti.Media.createSound({
+			url: "sounds/Engine_revving.wav",
+			volume: 0.1		
+		});
+		sound.play();
+		var splash = require("splash");
+		splash.splashScreen();
+	});
+	
+	var logo = Ti.UI.createImageView({
+		opacity: 0.9,
+		image: "images/repair_icon.jpeg",
+		width: "100%",
+		height: "auto",
+		top: 0
+	});
+	if(deviceOS === "android"){
+		logo.width = "100%";
+		logo.height = "25%";
+	
+	var titleLabel = Ti.UI.createLabel({
+		text: "Car-U-Repair-It",
+		color: "black",
+		top: "3%",
+		left: "5%",
+		font: {fontSize: 26, fontWeight: "bold"}
+	});
+	
+	var desc = Ti.UI.createLabel({
+		text: "...find a local repair shop",
+		color: "black",
+		bottom: "1%",
+		right: "3%",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+
+	// Home screen menu	
+	var findButton = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: 0.9,
+		top: "8%",
+		height: "8%",
+		left: "4%",
+		right: "3%",
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+	
+	var findLabel = Ti.UI.createLabel({
+		text: "Find a Repair Center",
+		color: "white",
+		top: "25%",
+		width: "auto",
+		height: "auto",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+	
+	var savedButton = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: 0.9,
+		top: "6%",
+		height: "8%",
+		left: "4%",
+		right: "3%",
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+	
+	var savedLabel = Ti.UI.createLabel({
+		text: "View saved Repair Centers",
+		color: "white",
+		top: "25%",
+		width: "auto",
+		height: "auto",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+	
+	var eraseButton = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: 0.9,
+		top: "6%",
+		height: "8%",
+		left: "4%",
+		right: "3%",
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+
+	var eraseLabel = Ti.UI.createLabel({
+		text: "Erase saved Repair Centers",
+		color: "white",
+		top: "25%",
+		width: "auto",
+		height: "auto",
+		font: {fontSize: 20, fontWeight: "bold"}
+	});
+
+	// Eventlisteners
+	var finder = require("finder");
+	findButton.addEventListener("click", finder.bg);
+	/*
+	var savedShops = require("savedShops");
+	savedButton.addEventListener("click", savedShops);
+	
+	var eraseShops = require("eraseShops");
+	eraseButton.addEventListener("click", eraseShops);*/		
+
+	mainWin.add(logo);
+	logo.add(titleLabel);
+	logo.add(desc);
+	mainWin.add(findButton);
+	mainWin.add(savedButton);
+	mainWin.add(eraseButton);
+	findButton.add(findLabel);
+	savedButton.add(savedLabel);
+	eraseButton.add(eraseLabel);
+	mainWin.open();
+
+// };
+
+var finder = function(data){	
+	var bg = Ti.UI.createWindow({
+		backgroundImage: "images/skidmarks.jpg",
+		height: "auto",
+		width: "auto"
+	});
+	
+	var nameView = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: .7,
+		top: 20,
+		height: 50,
+		left: 40,
+		right: 40,
+		borderRadius: 8,
+		borderWidth: 2,
+		borderColor: "black"
+	});
+	
+	var infoView = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: .7,
+		top: nameView.top + nameView.height + 30,
+		height: 250,
+		left: 40,
+		right: 40,
+		borderRadius: 8
+	});
+	
+	var hoursView = Ti.UI.createView({
+		backgroundColor: "gray",
+		opacity: .7,
+		top: infoView.top + infoView.height + 30,
+		height: 100,
+		left: 40,
+		right: 40,
+		borderRadius: 8
+	});
+	
+	var favButton = Ti.UI.createButton({
+		backgroundColor: "gray",
+		opacity: .7,
+		bottom: 20,
+		height: 50,
+		left: 40,
+		right: 40,
+		borderRadius: 8,		
+		text: "FAVORITES",		
+	});
+		
+	var name = Ti.UI.createLabel({
+		color: "white", 
+		top: 3,
+		text: "name",
+		textAlign: "center",
+		font: {fontSize: 32, fontWeight: "bold"}
+	});	
+	
+	var address = Ti.UI.createLabel({
+		color: "white", 
+		top: 20,
+		text: "address",
+		font: {fontSize: 22, fontWeight: "bold"}
+	});	
+	
+	var distance = Ti.UI.createLabel({
+		color: "white", 
+		top: address.top + 50,
+		left: 20,
+		text: "distance",
+		font: {fontSize: 18, fontWeight: "bold"}
+	});	
+	
+	var make = Ti.UI.createLabel({
+		color: "white", 
+		top: distance.top + 50,
+		left: 20,
+		text: "make",
+		font: {fontSize: 18, fontWeight: "bold"}
+	});	
+	
+	var repairs = Ti.UI.createLabel({
+		color: "white", 
+		top: make.top + 50,
+		left: 20,
+		text: "repairs",
+		font: {fontSize: 18, fontWeight: "bold"}
+	});	
+	
+	var hours = Ti.UI.createLabel({
+		color: "white", 
+		top: 20,
+		left: 20,
+		text: "hours"
+	});
+	
+	// Function to display the data on the UI
+	var addText = function(repairShop){
+		name 	 = repairShop.name;
+		address  = repairShop.address;
+		distance = "Distance from here: " + repairShop.distance + " mi";
+		make 	 = "We specialize in repairs of mostly " + repairShop.make + "s. \n but repair most all foreign and domestic.";
+		repairs  = "Type of work performed as a " + repairShop.repairs + ".";
+		hours 	 = "Hours of Operation: " + repairShop.hours;	
+	};
+	
+	// Main code
+	bg.add(nameView);
+	bg.add(infoView);
+	bg.add(hoursView);
+	bg.add(favButton);
+	nameView.add(name);
+	infoView.add(address);
+	infoView.add(distance);
+	infoView.add(make);
+	infoView.add(repairs);
+	hoursView.add(hours);
+	mainWin.openWindow(bg);
+	mainWin.open();
+		
+};
+
+
+	
+// Export screen/display functions
+// exports.homeScreen = homeScreen;
+exports.finder = finder;
