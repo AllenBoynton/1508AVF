@@ -1,6 +1,10 @@
 // Gets geolocation
 var api = require("api");
 
+var zip = function(findMe){
+    console.log(findMe);
+};
+
 var getGeo = function(){
 	Ti.Geolocation.purpose = "This application requires your Current Location.";
 	Ti.Geolocation.getCurrentPosition(function(e){
@@ -14,7 +18,9 @@ var getGeo = function(){
 			api.network(latitude, longitude);
 		}
 	});
+	Ti.Geolocation.reverseGeocoder(latitude, longitude, zip);
 };
 
 // Exports geolocation function 
 exports.getGeo = getGeo;
+exports.zip = zip;

@@ -2,7 +2,7 @@
 var geo = require("geo");
 
 var network = function(){
-	var url = "http://api.edmunds.com/api/dealer/v2/repairshops/?zipcode=29607&radius=100&pageNum=1&pageSize=10&sortby=distance%3AASC&view=full&api_key=a69s88jdn9qtfdyufxr9mch9";
+	var url = "http://api.edmunds.com/api/dealer/v2/repairshops/?=29607&radius=100&pageNum=1&pageSize=10&sortby=distance%3AASC&view=full&api_key=a69s88jdn9qtfdyufxr9mch9";
 	if(Ti.Network.online){
 		var client = Ti.Network.createHTTPClient({
 			onload: function(e){
