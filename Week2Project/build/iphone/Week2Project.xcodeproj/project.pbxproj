@@ -482,6 +482,7 @@
 		5081CEF815F8100E00C881D8 /* TiExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081CEF715F8100E00C881D8 /* TiExceptionHandler.m */; };
 		5081CEF915F8100E00C881D8 /* TiExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081CEF715F8100E00C881D8 /* TiExceptionHandler.m */; };
 		5081CEFA15F8100E00C881D8 /* TiExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081CEF715F8100E00C881D8 /* TiExceptionHandler.m */; };
+		6109A0251C95F9D400DFB69D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6109A0241C95F9D400DFB69D /* Default-568h@2x.png */; };
 		841CCAD11807395C00C8DB76 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841CCAD01807395C00C8DB76 /* CoreText.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		841CCAD21807396E00C8DB76 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841CCAD01807395C00C8DB76 /* CoreText.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		841CCAD31807397800C8DB76 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841CCAD01807395C00C8DB76 /* CoreText.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -962,7 +963,7 @@
 		1D19459913FF3BE500E2B4D0 /* TIDOMDocumentTypeProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIDOMDocumentTypeProxy.h; sourceTree = "<group>"; };
 		1D19459A13FF3BE500E2B4D0 /* TIDOMDocumentTypeProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIDOMDocumentTypeProxy.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Week2Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week2Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Week2Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week2Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCC542D13FF0B0700DF3EE5 /* TIDOMCharacterDataProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIDOMCharacterDataProxy.h; sourceTree = "<group>"; };
 		1DCC542E13FF0B0800DF3EE5 /* TIDOMCharacterDataProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIDOMCharacterDataProxy.m; sourceTree = "<group>"; };
 		1DD9388A1609230900091777 /* TiBindingTiValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiBindingTiValue.h; sourceTree = "<group>"; };
@@ -1290,7 +1291,7 @@
 		24D0700411D0253D00F615D8 /* TiUIiOSProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TiUIiOSProxy.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		24D0700511D0253D00F615D8 /* TiUIiOSProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TiUIiOSProxy.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		24D5C75811E6364F00F097E2 /* libtiverify.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiverify.a; path = lib/libtiverify.a; sourceTree = SOURCE_ROOT; };
-		24D8E4B1119B9D8A00F8CAA6 /* Week2Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week2Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D8E4B1119B9D8A00F8CAA6 /* Week2Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week2Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DD042A116A6C58006FD6E1 /* TiToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiToolbar.h; sourceTree = "<group>"; };
 		24DD0455116A6F02006FD6E1 /* TiTabGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiTabGroup.h; sourceTree = "<group>"; };
 		24DD0977116D8E07006FD6E1 /* TiToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiToolbarButton.h; sourceTree = "<group>"; };
@@ -1377,7 +1378,7 @@
 		312E36C0190B06D9008EAB8D /* libAPSAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPSAnalytics.a; sourceTree = "<group>"; };
 		3186097D192BDB4E00093482 /* AnalyticsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsModule.h; sourceTree = "<group>"; };
 		3186097E192BDB4E00093482 /* AnalyticsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsModule.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* Week2Project_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week2Project_Prefix.pch"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Week2Project_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Week2Project_Prefix.pch; sourceTree = "<group>"; };
 		4688700515E39A9D008FA326 /* TiUIiPhoneAlertDialogStyleProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiUIiPhoneAlertDialogStyleProxy.h; sourceTree = "<group>"; };
 		4688700615E39A9D008FA326 /* TiUIiPhoneAlertDialogStyleProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiUIiPhoneAlertDialogStyleProxy.m; sourceTree = "<group>"; };
 		4D3033A1136239B30034640F /* TiFilesystemFileStreamProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TiFilesystemFileStreamProxy.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1397,6 +1398,7 @@
 		502A68EA16F0428500661EF6 /* TiViewTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiViewTemplate.m; sourceTree = "<group>"; };
 		5081CEF615F8100E00C881D8 /* TiExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiExceptionHandler.h; sourceTree = "<group>"; };
 		5081CEF715F8100E00C881D8 /* TiExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiExceptionHandler.m; sourceTree = "<group>"; };
+		6109A0241C95F9D400DFB69D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		841CCAD01807395C00C8DB76 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		843FA58217BD4DFF0064E061 /* TiUIiOSNavWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiUIiOSNavWindow.h; sourceTree = "<group>"; };
 		843FA58317BD4DFF0064E061 /* TiUIiOSNavWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiUIiOSNavWindow.m; sourceTree = "<group>"; };
@@ -1557,7 +1559,7 @@
 		DAA72342156D642400757987 /* TiConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiConsole.m; sourceTree = "<group>"; };
 		DAA905CC11A359F10030B119 /* TiMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiMediaItem.h; sourceTree = "<group>"; };
 		DAA905CD11A359F10030B119 /* TiMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiMediaItem.m; sourceTree = "<group>"; };
-		DABB37BC12E8CB280026A6EA /* Week2Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week2Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABB37BC12E8CB280026A6EA /* Week2Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week2Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABF3ECD134D210400836137 /* TiBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiBuffer.h; sourceTree = "<group>"; };
 		DABF3ECE134D210400836137 /* TiBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiBuffer.m; sourceTree = "<group>"; };
 		DABF3ED5134D2CA100836137 /* StreamModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamModule.h; sourceTree = "<group>"; };
@@ -1773,7 +1775,6 @@
 				24CA8A0A111161DC0084E2DE /* Utils */,
 				24CA8A0B111161E10084E2DE /* API */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -2687,6 +2688,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				6109A0241C95F9D400DFB69D /* Default-568h@2x.png */,
 				24CA8902111160BE0084E2DE /* Classes */,
 				24CA8903111160C30084E2DE /* Thirdparty */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -3056,7 +3058,7 @@
 			);
 			dependencies = (
 			);
-			name = "Week2Project";
+			name = Week2Project;
 			productName = Week2Project;
 			productReference = 1D6058910D05DD3D006BFB54 /* Week2Project.app */;
 			productType = "com.apple.product-type.application";
@@ -3107,7 +3109,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0720;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Week2Project" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3135,6 +3137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6109A0251C95F9D400DFB69D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4094,7 +4097,7 @@
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Week2Project_Prefix.pch";
+				GCC_PREFIX_HEADER = Week2Project_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
@@ -4108,7 +4111,8 @@
 					"-DDEBUG",
 					"-DTI_POST_1_2",
 				);
-				PRODUCT_NAME = "Week2Project";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.Week2Project;
+				PRODUCT_NAME = Week2Project;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -4123,7 +4127,7 @@
 				COPY_PHASE_STRIP = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Week2Project_Prefix.pch";
+				GCC_PREFIX_HEADER = Week2Project_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
@@ -4133,7 +4137,8 @@
 					"\"$(SRCROOT)/Classes/APSAnalytics\"",
 					"\"$(SRCROOT)/Classes/APSHTTPClient\"",
 				);
-				PRODUCT_NAME = "Week2Project";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.Week2Project;
+				PRODUCT_NAME = Week2Project;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -4149,7 +4154,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Week2Project_Prefix.pch";
+				GCC_PREFIX_HEADER = Week2Project_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -4163,7 +4168,8 @@
 					"-DTI_POST_1_2",
 					"-DDEBUG",
 				);
-				PRODUCT_NAME = "Week2Project";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.Week2Project;
+				PRODUCT_NAME = Week2Project;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -4176,7 +4182,7 @@
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Week2Project_Prefix.pch";
+				GCC_PREFIX_HEADER = Week2Project_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -4189,7 +4195,8 @@
 					"-DIPAD",
 					"-DTI_POST_1_2",
 				);
-				PRODUCT_NAME = "Week2Project";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.Week2Project;
+				PRODUCT_NAME = Week2Project;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -4206,11 +4213,14 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
@@ -4220,6 +4230,7 @@
 				GCC_WARN_MISSING_PARENTHESES = NO;
 				GCC_WARN_SHADOW = NO;
 				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_PARAMETER = NO;
@@ -4255,11 +4266,13 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
@@ -4269,6 +4282,7 @@
 				GCC_WARN_MISSING_PARENTHESES = NO;
 				GCC_WARN_SHADOW = NO;
 				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_PARAMETER = NO;
@@ -4300,11 +4314,13 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
@@ -4314,6 +4330,7 @@
 				GCC_WARN_MISSING_PARENTHESES = NO;
 				GCC_WARN_SHADOW = NO;
 				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_PARAMETER = NO;
@@ -4350,7 +4367,7 @@
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Week2Project_Prefix.pch";
+				GCC_PREFIX_HEADER = Week2Project_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
@@ -4364,7 +4381,8 @@
 					"-DDEBUG",
 					"-DTI_POST_1_2",
 				);
-				PRODUCT_NAME = "Week2Project";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.Week2Project;
+				PRODUCT_NAME = Week2Project;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -4380,7 +4398,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Week2Project_Prefix.pch";
+				GCC_PREFIX_HEADER = Week2Project_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -4394,7 +4412,8 @@
 					"-DTI_POST_1_2",
 					"-DDEBUG",
 				);
-				PRODUCT_NAME = "Week2Project";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.Week2Project;
+				PRODUCT_NAME = Week2Project;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Developer;
@@ -4409,7 +4428,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Week2Project_Prefix.pch";
+				GCC_PREFIX_HEADER = Week2Project_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -4428,7 +4447,8 @@
 					"-DTI_POST_1_2",
 					"-DDEBUG",
 				);
-				PRODUCT_NAME = "Week2Project";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.Week2Project;
+				PRODUCT_NAME = Week2Project;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4444,7 +4464,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Week2Project_Prefix.pch";
+				GCC_PREFIX_HEADER = Week2Project_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -4463,7 +4483,8 @@
 					"-DTI_POST_1_2",
 					"-DDEBUG",
 				);
-				PRODUCT_NAME = "Week2Project";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.Week2Project;
+				PRODUCT_NAME = Week2Project;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4477,7 +4498,7 @@
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Week2Project_Prefix.pch";
+				GCC_PREFIX_HEADER = Week2Project_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -4490,7 +4511,8 @@
 					"-DIPAD",
 					"-DTI_POST_1_2",
 				);
-				PRODUCT_NAME = "Week2Project";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.Week2Project;
+				PRODUCT_NAME = Week2Project;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
