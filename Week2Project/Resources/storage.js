@@ -19,7 +19,7 @@ var read = function(){
 				wind: 		 dbResults.fieldByName ("wind"),
 				windDir:	 dbResults.fieldByName ("windDir"),
 				humidity: 	 dbResults.fieldByName ("humidity"),
-				uv:			 dbResults.fieldByName ("uv"),
+				uv:		 dbResults.fieldByName ("uv"),
 				dewPoint: 	 dbResults.fieldByName ("dewPoint"),
 				pressure: 	 dbResults.fieldByName ("pressure"),
 				visibility:	 dbResults.fieldByName ("visibility"),
