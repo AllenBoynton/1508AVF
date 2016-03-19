@@ -12,7 +12,7 @@ var network = function(url){
 					tempLow: 	json.almanac.temp_low.normal.F,
 					weather: 	json.current_observation.weather,
 					feels: 		json.current_observation.feelslike_f,
-					recordHigh: json.almanac.temp_high.record.F,
+					recordHigh: 	json.almanac.temp_high.record.F,
 					highYear: 	json.almanac.temp_high.recordyear,
 					recordLow: 	json.almanac.temp_low.record.F,
 					lowYear: 	json.almanac.temp_low.recordyear, 
@@ -22,8 +22,8 @@ var network = function(url){
 					uv: 		json.current_observation.UV,
 					dewPoint: 	json.current_observation.dewpoint_f,
 					pressure: 	json.current_observation.pressure_mb,
-					visibility: json.current_observation.visibility_mi,
-					updateInfo: json.current_observation.observation_time,
+					visibility: 	json.current_observation.visibility_mi,
+					updateInfo: 	json.current_observation.observation_time,
 				};
 				var storage = require("storage");
 				storage.saves(weatherInfo);
