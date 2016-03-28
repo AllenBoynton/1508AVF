@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile Profiler
- * Copyright (c) 2009-2015 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2016 by Appcelerator, Inc. All Rights Reserved.
  * Proprietary and Confidential - This source code is not for redistribution
  */
 #import "TiToJS.h"

@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2015 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2016 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  *
@@ -21,7 +21,7 @@
 			@"name",
 			@"ti.cloud",
 			@"moduleid",
-			@"3.2.9",
+			@"3.2.10",
 			@"version",
 			@"1056b5d2-2bb5-4339-b930-297637aeec4e",
 			@"guid",
