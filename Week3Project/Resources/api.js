@@ -11,7 +11,7 @@ var getData = function(){
 				var repairShops = json.repairShops;
 				var shopArray = [];
 				
-				for(i=0, j=repairShops.length; i<j; i++){
+				for(var i=0, i<repairShops.length; i++){
 					var repairShop = {
 						name: 	  repairShops[i].name,
 						address:  repairShops[i].address,
