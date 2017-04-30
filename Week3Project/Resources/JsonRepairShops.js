@@ -1,3 +1,5 @@
+// JSON API from edmunds.com
+
 repairShops({
    "repairshops":[
       {
